@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaH-8W-Vlr" customClass="LCMoreVCHeaderLessView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uv-E0-0b1">
+                    <rect key="frame" x="71" y="0.0" width="233" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XC-HR-alV" customClass="LCFilterTagButton">
+                            <rect key="frame" x="10" y="11" width="42" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="52a-wn-Pbz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                            <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                            <state key="normal" title="今天">
+                                <color key="titleColor" red="0.49019607840000001" green="0.47450980390000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wi9-fE-v1K" customClass="LCFilterTagButton">
+                            <rect key="frame" x="67" y="11" width="42" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="l2K-QM-WVQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                            <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                            <state key="normal" title="明天">
+                                <color key="titleColor" red="0.49019607840000001" green="0.47450980390000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b7-Y2-bW4" customClass="LCFilterTagButton">
+                            <rect key="frame" x="124" y="11" width="55" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="blp-LL-kN3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                            <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                            <state key="normal" title="本周末">
+                                <color key="titleColor" red="0.49019607840000001" green="0.47450980390000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-dv-edu" customClass="LCFilterTagButton">
+                            <rect key="frame" x="194" y="11" width="39" height="28"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="6Rh-mn-LMH"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                            <state key="normal" image="HomepagePlanMoreIcon">
+                                <color key="titleColor" red="0.49019607840000001" green="0.47450980390000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4b7-Y2-bW4" firstAttribute="centerY" secondItem="5uv-E0-0b1" secondAttribute="centerY" id="2Wa-Ih-DS3"/>
+                        <constraint firstItem="Ght-dv-edu" firstAttribute="leading" secondItem="4b7-Y2-bW4" secondAttribute="trailing" constant="15" id="44Z-yY-KEw"/>
+                        <constraint firstItem="wi9-fE-v1K" firstAttribute="centerY" secondItem="5uv-E0-0b1" secondAttribute="centerY" id="5xk-39-lWR"/>
+                        <constraint firstItem="1XC-HR-alV" firstAttribute="leading" secondItem="5uv-E0-0b1" secondAttribute="leading" constant="10" id="RT0-jg-k9E"/>
+                        <constraint firstItem="Ght-dv-edu" firstAttribute="centerY" secondItem="5uv-E0-0b1" secondAttribute="centerY" id="TJ8-AZ-Ruj"/>
+                        <constraint firstItem="4b7-Y2-bW4" firstAttribute="leading" secondItem="wi9-fE-v1K" secondAttribute="trailing" constant="15" id="XkH-QF-r8V"/>
+                        <constraint firstAttribute="width" constant="233" id="ZVg-CV-w2b"/>
+                        <constraint firstItem="wi9-fE-v1K" firstAttribute="leading" secondItem="1XC-HR-alV" secondAttribute="trailing" constant="15" id="f9W-FN-yS2"/>
+                        <constraint firstItem="1XC-HR-alV" firstAttribute="centerY" secondItem="5uv-E0-0b1" secondAttribute="centerY" id="hgY-Cj-xvj"/>
+                        <constraint firstAttribute="height" constant="50" id="jEN-jm-xzp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4u-SF-buC">
+                    <rect key="frame" x="0.0" y="49" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xNj-fc-2c6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5uv-E0-0b1" firstAttribute="centerX" secondItem="oaH-8W-Vlr" secondAttribute="centerX" id="0lS-5Q-63c"/>
+                <constraint firstAttribute="bottom" secondItem="Q4u-SF-buC" secondAttribute="bottom" id="3nr-G9-VPk"/>
+                <constraint firstAttribute="trailing" secondItem="Q4u-SF-buC" secondAttribute="trailing" id="Ar4-7x-y0p"/>
+                <constraint firstItem="5uv-E0-0b1" firstAttribute="centerY" secondItem="oaH-8W-Vlr" secondAttribute="centerY" id="LNv-tK-3B9"/>
+                <constraint firstAttribute="height" constant="50" id="eSN-Bh-D8r"/>
+                <constraint firstItem="Q4u-SF-buC" firstAttribute="leading" secondItem="oaH-8W-Vlr" secondAttribute="leading" id="tO0-7q-3Po"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerView" destination="5uv-E0-0b1" id="dMl-FL-RdE"/>
+                <outlet property="openBtn" destination="Ght-dv-edu" id="Gg7-LK-hiL"/>
+                <outlet property="timeTodayButton" destination="1XC-HR-alV" id="ceG-Mf-Ilk"/>
+                <outlet property="timeTomorrowButton" destination="wi9-fE-v1K" id="6Ax-Ki-fFw"/>
+                <outlet property="timeWeekButton" destination="4b7-Y2-bW4" id="i13-fd-Ifb"/>
+            </connections>
+            <point key="canvasLocation" x="-681.5" y="-2891"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HomepagePlanMoreIcon" width="23" height="23"/>
+    </resources>
+</document>

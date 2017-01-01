@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LCFilterTagButtonCell" id="gTV-IL-0wX" customClass="LCFilterTagButtonCell">
+            <rect key="frame" x="0.0" y="0.0" width="78" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="78" height="30"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgz-pd-pAy">
+                        <rect key="frame" x="0.0" y="0.0" width="78" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECR-Fg-ilB" customClass="LCFilterTagButton">
+                                <rect key="frame" x="0.0" y="0.0" width="78" height="30"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.86666666670000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="G62-aP-3X5"/>
+                                    <constraint firstAttribute="height" constant="30" id="t21-Me-e0U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="14"/>
+                                <state key="normal" title="全部">
+                                    <color key="titleColor" red="0.49803921568627452" green="0.28235294117647058" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ECR-Fg-ilB" secondAttribute="trailing" id="BTi-l7-2Oz"/>
+                            <constraint firstItem="ECR-Fg-ilB" firstAttribute="leading" secondItem="kgz-pd-pAy" secondAttribute="leading" id="Njw-yO-Fku"/>
+                            <constraint firstItem="ECR-Fg-ilB" firstAttribute="top" secondItem="kgz-pd-pAy" secondAttribute="top" id="bIc-NS-HrS"/>
+                            <constraint firstAttribute="bottom" secondItem="ECR-Fg-ilB" secondAttribute="bottom" id="enT-xW-Zsf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="kgz-pd-pAy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BZc-XN-XHx"/>
+                <constraint firstAttribute="trailing" secondItem="kgz-pd-pAy" secondAttribute="trailing" id="WYu-X0-agv"/>
+                <constraint firstAttribute="bottom" secondItem="kgz-pd-pAy" secondAttribute="bottom" id="ZIU-vC-FqF"/>
+                <constraint firstItem="kgz-pd-pAy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZTs-cC-qou"/>
+            </constraints>
+            <size key="customSize" width="79" height="30"/>
+            <connections>
+                <outlet property="buttonWidthConstraint" destination="G62-aP-3X5" id="E7e-sJ-0h8"/>
+                <outlet property="filterTagButton" destination="ECR-Fg-ilB" id="rwd-dI-k9H"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="227"/>
+        </collectionViewCell>
+    </objects>
+</document>

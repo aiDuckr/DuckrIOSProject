@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LCCarIdentityAlertView" customModule="LinkCity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="384"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E7j-k6-wgB">
+                    <rect key="frame" x="24" y="24" width="262" height="213"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CarIconGray" translatesAutoresizingMaskIntoConstraints="NO" id="P8d-XV-Tuk">
+                            <rect key="frame" x="104" y="15" width="56" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="RI1-Ky-lGj"/>
+                                <constraint firstAttribute="height" constant="56" id="xHo-4G-NG9"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="28"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="271" verticalHuggingPriority="271" horizontalCompressionResistancePriority="770" verticalCompressionResistancePriority="770" text="认证车辆信息" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydu-kx-QoN">
+                            <rect key="frame" x="6" y="86" width="250" height="19"/>
+                            <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="16"/>
+                            <color key="textColor" red="0.30980392156862746" green="0.29019607843137252" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="会提高90%的拼车邀约成功率" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewb-Zf-lTi">
+                            <rect key="frame" x="6" y="117" width="250" height="16"/>
+                            <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="14"/>
+                            <color key="textColor" red="0.6705882352941176" green="0.65490196078431373" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m43-lr-DFN">
+                            <rect key="frame" x="52" y="158" width="160" height="40"/>
+                            <color key="backgroundColor" red="0.99607843137254903" green="0.88235294117647056" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="QqD-gk-z1m"/>
+                                <constraint firstAttribute="height" constant="40" id="mb6-dr-tkT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="16"/>
+                            <state key="normal" title="去认证">
+                                <color key="titleColor" red="0.41960784313725491" green="0.27058823529411763" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="submitBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="H9C-oL-cVm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ydu-kx-QoN" secondAttribute="trailing" constant="6" id="1fT-BD-COD"/>
+                        <constraint firstAttribute="trailing" secondItem="ewb-Zf-lTi" secondAttribute="trailing" constant="6" id="77V-EH-qCx"/>
+                        <constraint firstItem="P8d-XV-Tuk" firstAttribute="top" secondItem="E7j-k6-wgB" secondAttribute="top" constant="15" id="9jd-02-XT2"/>
+                        <constraint firstItem="ewb-Zf-lTi" firstAttribute="leading" secondItem="E7j-k6-wgB" secondAttribute="leading" constant="6" id="DYt-hu-9e4"/>
+                        <constraint firstAttribute="bottom" secondItem="m43-lr-DFN" secondAttribute="bottom" priority="750" constant="15" id="MWc-nc-lbU"/>
+                        <constraint firstItem="ydu-kx-QoN" firstAttribute="top" secondItem="P8d-XV-Tuk" secondAttribute="bottom" constant="15" id="OX7-aN-kBM"/>
+                        <constraint firstItem="m43-lr-DFN" firstAttribute="top" secondItem="ewb-Zf-lTi" secondAttribute="bottom" constant="25" id="YH9-bk-yrb"/>
+                        <constraint firstItem="ydu-kx-QoN" firstAttribute="leading" secondItem="E7j-k6-wgB" secondAttribute="leading" constant="6" id="Ycl-nD-Iwc"/>
+                        <constraint firstItem="P8d-XV-Tuk" firstAttribute="centerX" secondItem="E7j-k6-wgB" secondAttribute="centerX" id="agA-vI-Qvg"/>
+                        <constraint firstItem="ewb-Zf-lTi" firstAttribute="top" secondItem="ydu-kx-QoN" secondAttribute="bottom" constant="12" id="mqO-CC-mJj"/>
+                        <constraint firstItem="m43-lr-DFN" firstAttribute="centerX" secondItem="E7j-k6-wgB" secondAttribute="centerX" id="uEP-G3-A0R"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJY-eb-KhF" userLabel="cancelButton">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="1Tc-vQ-UEn"/>
+                        <constraint firstAttribute="height" constant="50" id="Ep2-Jr-4OR"/>
+                        <constraint firstAttribute="height" constant="50" id="Q7J-hh-T0j"/>
+                        <constraint firstAttribute="width" constant="50" id="Rjt-MK-dog"/>
+                    </constraints>
+                    <state key="normal" image="CarIdentityAlertCloseIcon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ep2-Jr-4OR"/>
+                            <exclude reference="Rjt-MK-dog"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Ep2-Jr-4OR"/>
+                            <include reference="Rjt-MK-dog"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="cancelBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="hl7-Rn-yzP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="E7j-k6-wgB" secondAttribute="trailing" constant="24" id="HRO-W2-gtS"/>
+                <constraint firstItem="E7j-k6-wgB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="Kl1-dV-R6V"/>
+                <constraint firstItem="ZJY-eb-KhF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YU3-8O-jdH"/>
+                <constraint firstItem="ZJY-eb-KhF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hf6-1B-Qvk"/>
+                <constraint firstAttribute="bottom" secondItem="E7j-k6-wgB" secondAttribute="bottom" priority="250" constant="24" id="j8n-oD-ynW"/>
+                <constraint firstItem="E7j-k6-wgB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="sDo-cH-OVt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="ewb-Zf-lTi" id="eDd-nW-44O"/>
+                <outlet property="iconImageView" destination="P8d-XV-Tuk" id="ztX-Eq-gne"/>
+                <outlet property="submitBtn" destination="m43-lr-DFN" id="KnI-DS-oUn"/>
+                <outlet property="titleLabel" destination="ydu-kx-QoN" id="7C7-hp-snt"/>
+            </connections>
+            <point key="canvasLocation" x="257" y="372"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CarIconGray" width="55" height="55"/>
+        <image name="CarIdentityAlertCloseIcon" width="32" height="32"/>
+    </resources>
+</document>

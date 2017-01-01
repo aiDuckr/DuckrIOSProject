@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LCTourpicPlanInfoCell" rowHeight="130" id="KGk-i7-Jjw" customClass="LCTourpicPlanInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GI-12-ffM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAR-UU-qIC" customClass="RadioButton">
+                                <rect key="frame" x="7" y="49" width="30" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="OSc-Tc-BMz"/>
+                                    <constraint firstAttribute="height" constant="33" id="QGE-ig-mbg"/>
+                                </constraints>
+                                <state key="normal" image="DefaultRadioButtonIcon"/>
+                                <state key="selected" image="DefaultRadioButtonIconSelected"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lje-36-FW4">
+                                <rect key="frame" x="44" y="0.0" width="331" height="130"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Tq-vw-hLN">
+                                        <rect key="frame" x="100" y="15" width="219" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="羊湖一日游飞飞飞不含鲁朗啊啊a" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suJ-2m-Olw">
+                                                <rect key="frame" x="12" y="10" width="199" height="17"/>
+                                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="14"/>
+                                                <color key="textColor" red="0.17254901960784313" green="0.16470588235294117" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="羊湖藏语意为：碧玉湖，又是西藏3大圣湖之一，像珊瑚支一般" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J26-WF-Bxp">
+                                                <rect key="frame" x="12" y="34" width="199" height="28"/>
+                                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="12"/>
+                                                <color key="textColor" red="0.49019607843137253" green="0.47450980392156861" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-04-15 全程14天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlT-hP-qfO">
+                                                <rect key="frame" x="12" y="76" width="128" height="14"/>
+                                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="12"/>
+                                                <color key="textColor" red="0.49019607840000001" green="0.47450980390000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥1099" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uy-2f-qhP">
+                                                <rect key="frame" x="162" y="73" width="49" height="17"/>
+                                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="14"/>
+                                                <color key="textColor" red="0.49019607840000001" green="0.47450980390000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="J26-WF-Bxp" firstAttribute="top" secondItem="suJ-2m-Olw" secondAttribute="bottom" constant="7" id="CsT-6G-7zC"/>
+                                            <constraint firstItem="suJ-2m-Olw" firstAttribute="leading" secondItem="6Tq-vw-hLN" secondAttribute="leading" constant="12" id="Nh9-tI-mfl"/>
+                                            <constraint firstAttribute="trailing" secondItem="suJ-2m-Olw" secondAttribute="trailing" constant="8" id="RZr-Cf-18G"/>
+                                            <constraint firstItem="8Uy-2f-qhP" firstAttribute="trailing" secondItem="suJ-2m-Olw" secondAttribute="trailing" id="aU7-l4-CeD"/>
+                                            <constraint firstItem="J26-WF-Bxp" firstAttribute="trailing" secondItem="suJ-2m-Olw" secondAttribute="trailing" id="azm-ov-VzA"/>
+                                            <constraint firstItem="IlT-hP-qfO" firstAttribute="leading" secondItem="6Tq-vw-hLN" secondAttribute="leading" constant="12" id="evV-I0-4ye"/>
+                                            <constraint firstItem="J26-WF-Bxp" firstAttribute="leading" secondItem="suJ-2m-Olw" secondAttribute="leading" id="f7l-gF-nuF"/>
+                                            <constraint firstItem="suJ-2m-Olw" firstAttribute="top" secondItem="6Tq-vw-hLN" secondAttribute="top" constant="10" id="gzR-LE-5zf"/>
+                                            <constraint firstItem="8Uy-2f-qhP" firstAttribute="bottom" secondItem="IlT-hP-qfO" secondAttribute="bottom" id="iSu-o5-gzr"/>
+                                            <constraint firstAttribute="bottom" secondItem="IlT-hP-qfO" secondAttribute="bottom" constant="10" id="uqt-v4-Zhc"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TSm-rk-DlV">
+                                        <rect key="frame" x="0.0" y="15" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Izy-dM-Hk6"/>
+                                            <constraint firstAttribute="width" constant="100" id="qdF-QO-F51"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="TSm-rk-DlV" firstAttribute="leading" secondItem="Lje-36-FW4" secondAttribute="leading" id="3fz-0J-acl"/>
+                                    <constraint firstItem="6Tq-vw-hLN" firstAttribute="leading" secondItem="TSm-rk-DlV" secondAttribute="trailing" id="67a-Lm-4bn"/>
+                                    <constraint firstItem="TSm-rk-DlV" firstAttribute="top" secondItem="Lje-36-FW4" secondAttribute="top" constant="15" id="Q8G-q2-HCl"/>
+                                    <constraint firstItem="6Tq-vw-hLN" firstAttribute="bottom" secondItem="TSm-rk-DlV" secondAttribute="bottom" id="R1Z-8r-vD6"/>
+                                    <constraint firstItem="6Tq-vw-hLN" firstAttribute="top" secondItem="TSm-rk-DlV" secondAttribute="top" id="XWN-NM-iYk"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Tq-vw-hLN" secondAttribute="trailing" constant="12" id="apZ-4e-gzV"/>
+                                    <constraint firstAttribute="bottom" secondItem="TSm-rk-DlV" secondAttribute="bottom" constant="15" id="hPJ-Lt-Oea"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Lje-36-FW4" secondAttribute="bottom" id="IwV-3t-ubf"/>
+                            <constraint firstItem="Lje-36-FW4" firstAttribute="leading" secondItem="UAR-UU-qIC" secondAttribute="trailing" constant="7" id="VG4-QA-3C2"/>
+                            <constraint firstItem="Lje-36-FW4" firstAttribute="top" secondItem="9GI-12-ffM" secondAttribute="top" id="WxA-zS-bih"/>
+                            <constraint firstAttribute="trailing" secondItem="Lje-36-FW4" secondAttribute="trailing" id="Xfa-AW-ZdV"/>
+                            <constraint firstItem="UAR-UU-qIC" firstAttribute="centerY" secondItem="9GI-12-ffM" secondAttribute="centerY" id="dhT-V7-i3x"/>
+                            <constraint firstItem="UAR-UU-qIC" firstAttribute="leading" secondItem="9GI-12-ffM" secondAttribute="leading" constant="7" id="n1G-aB-TWY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9GI-12-ffM" secondAttribute="bottom" id="EMh-gz-cn7"/>
+                    <constraint firstItem="9GI-12-ffM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HKe-5z-UMI"/>
+                    <constraint firstItem="9GI-12-ffM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QS0-Is-hJC"/>
+                    <constraint firstAttribute="trailing" secondItem="9GI-12-ffM" secondAttribute="trailing" id="d7b-hO-1dl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="costLabel" destination="8Uy-2f-qhP" id="ikT-V9-4Bq"/>
+                <outlet property="descLabel" destination="J26-WF-Bxp" id="GCh-fw-Zyt"/>
+                <outlet property="descView" destination="6Tq-vw-hLN" id="Qh4-nd-DDG"/>
+                <outlet property="detailInfoView" destination="Lje-36-FW4" id="umP-Q0-Hm9"/>
+                <outlet property="photoView" destination="TSm-rk-DlV" id="SGh-tE-TNO"/>
+                <outlet property="radioButton" destination="UAR-UU-qIC" id="phG-Mn-wY8"/>
+                <outlet property="timeLabel" destination="IlT-hP-qfO" id="8Q4-vv-yzM"/>
+                <outlet property="titleLabel" destination="suJ-2m-Olw" id="cFM-po-uuy"/>
+            </connections>
+            <point key="canvasLocation" x="370" y="275"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DefaultRadioButtonIcon" width="21" height="21"/>
+        <image name="DefaultRadioButtonIconSelected" width="21" height="21"/>
+    </resources>
+</document>

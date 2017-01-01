@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D9c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LCRoutePlaceDayHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MOb-8x-xdY" userLabel="TopLine">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.90980392156862744" green="0.89411764705882346" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="cMd-TR-UeU">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="constant">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="cMd-TR-UeU"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="cMd-TR-UeU"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ce0-39-TSX" userLabel="BottomLine">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.89411764709999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WvX-KU-714">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="constant">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="WvX-KU-714"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="WvX-KU-714"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="261" verticalHuggingPriority="261" horizontalCompressionResistancePriority="760" verticalCompressionResistancePriority="760" ambiguous="YES" misplaced="YES" text="DAY1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oF-kF-Uqt">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                    <color key="textColor" red="0.4392156862745098" green="0.41960784313725491" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="南普陀寺-厦门大学" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLr-4Y-TbN">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                    <color key="textColor" red="0.6588235294117647" green="0.64313725490196072" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MOb-8x-xdY" secondAttribute="trailing" id="0AO-5W-pVn"/>
+                <constraint firstItem="ce0-39-TSX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HJ4-ep-99a"/>
+                <constraint firstItem="MOb-8x-xdY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Iux-Nk-ESn"/>
+                <constraint firstAttribute="bottom" secondItem="ce0-39-TSX" secondAttribute="bottom" constant="54" id="KuI-Yu-hvb">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="MOb-8x-xdY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M0O-1m-k8c"/>
+                <constraint firstAttribute="trailing" secondItem="BLr-4Y-TbN" secondAttribute="trailing" constant="144" id="Rti-w0-eW3">
+                    <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="ce0-39-TSX" secondAttribute="trailing" id="WCF-0x-Ccv"/>
+                <constraint firstItem="BLr-4Y-TbN" firstAttribute="leading" secondItem="7oF-kF-Uqt" secondAttribute="trailing" constant="199" id="aKm-NV-wqE">
+                    <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                </constraint>
+                <constraint firstItem="7oF-kF-Uqt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="48" id="bpV-PM-8dw">
+                    <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="BLr-4Y-TbN" secondAttribute="centerY" constant="-11.5" id="l44-RY-9mF">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="7oF-kF-Uqt" secondAttribute="centerY" constant="-5.5" id="r1p-kc-M6T">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0AO-5W-pVn"/>
+                    <exclude reference="Iux-Nk-ESn"/>
+                    <exclude reference="M0O-1m-k8c"/>
+                    <exclude reference="HJ4-ep-99a"/>
+                    <exclude reference="KuI-Yu-hvb"/>
+                    <exclude reference="WCF-0x-Ccv"/>
+                    <exclude reference="bpV-PM-8dw"/>
+                    <exclude reference="r1p-kc-M6T"/>
+                    <exclude reference="Rti-w0-eW3"/>
+                    <exclude reference="aKm-NV-wqE"/>
+                    <exclude reference="l44-RY-9mF"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="MOb-8x-xdY"/>
+                    <include reference="ce0-39-TSX"/>
+                    <include reference="7oF-kF-Uqt"/>
+                    <include reference="BLr-4Y-TbN"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="0AO-5W-pVn"/>
+                    <include reference="Iux-Nk-ESn"/>
+                    <include reference="M0O-1m-k8c"/>
+                    <include reference="HJ4-ep-99a"/>
+                    <include reference="KuI-Yu-hvb"/>
+                    <include reference="WCF-0x-Ccv"/>
+                    <include reference="bpV-PM-8dw"/>
+                    <include reference="r1p-kc-M6T"/>
+                    <include reference="Rti-w0-eW3"/>
+                    <include reference="aKm-NV-wqE"/>
+                    <include reference="l44-RY-9mF"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="dayLabel" destination="7oF-kF-Uqt" id="Ct2-fp-Cp3"/>
+                <outlet property="dayRouteLabel" destination="BLr-4Y-TbN" id="yU2-7G-HNG"/>
+            </connections>
+            <point key="canvasLocation" x="273.5" y="197"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2333a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEv-73-S6W">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="北京百应连城科技有限公司" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9B-hn-Q2E">
+                            <frame key="frameInset" minX="174" minY="416" width="132" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="icS-O3-OPy">
+                                    <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="300" id="uPH-oe-qtJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="11"/>
+                            <color key="textColor" red="0.71372549019607845" green="0.47058823529411764" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="icS-O3-OPy"/>
+                                    <exclude reference="uPH-oe-qtJ"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="icS-O3-OPy"/>
+                                    <include reference="uPH-oe-qtJ"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="©2016 duckr.cn 保留所有权利" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA8-EN-ai7">
+                            <frame key="frameInset" minX="163" minY="437" width="154" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="8ri-4U-fJl"/>
+                                <constraint firstAttribute="width" constant="300" id="Vc7-Kc-sla"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="11"/>
+                            <color key="textColor" red="0.71372549019607845" green="0.47058823529411764" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="8ri-4U-fJl"/>
+                                    <exclude reference="Vc7-Kc-sla"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="8ri-4U-fJl"/>
+                                    <include reference="Vc7-Kc-sla"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tye-7N-7pO">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="hn9-br-Zuf"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashDuckrIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bc5-zZ-hWZ"/>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.8666666666666667" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="eA8-EN-ai7" firstAttribute="top" secondItem="O9B-hn-Q2E" secondAttribute="bottom" constant="8" id="Gco-TY-4jO"/>
+                        <constraint firstItem="bc5-zZ-hWZ" firstAttribute="centerX" secondItem="iEv-73-S6W" secondAttribute="centerX" id="PNK-0F-X96"/>
+                        <constraint firstAttribute="trailing" secondItem="tye-7N-7pO" secondAttribute="trailing" id="TJq-9D-Lpe"/>
+                        <constraint firstAttribute="bottom" secondItem="eA8-EN-ai7" secondAttribute="bottom" constant="30" id="TQC-A9-axg"/>
+                        <constraint firstItem="eA8-EN-ai7" firstAttribute="centerX" secondItem="iEv-73-S6W" secondAttribute="centerX" id="VvY-5b-sGm"/>
+                        <constraint firstItem="tye-7N-7pO" firstAttribute="centerY" secondItem="iEv-73-S6W" secondAttribute="centerY" id="WIa-Sf-kxt"/>
+                        <constraint firstItem="O9B-hn-Q2E" firstAttribute="centerX" secondItem="iEv-73-S6W" secondAttribute="centerX" id="ciL-4y-zo9"/>
+                        <constraint firstItem="tye-7N-7pO" firstAttribute="leading" secondItem="iEv-73-S6W" secondAttribute="leading" id="isc-CS-Ur0"/>
+                        <constraint firstItem="tye-7N-7pO" firstAttribute="top" secondItem="bc5-zZ-hWZ" secondAttribute="bottom" constant="10" id="rGY-lX-EbL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iEv-73-S6W" secondAttribute="bottom" id="1rB-tM-TTq"/>
+                <constraint firstAttribute="trailing" secondItem="iEv-73-S6W" secondAttribute="trailing" id="AfA-FB-YCk"/>
+                <constraint firstItem="iEv-73-S6W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dOm-8b-Zfg"/>
+                <constraint firstItem="iEv-73-S6W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="z3A-Fj-xhr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="263" y="465"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SplashDuckrIcon" width="375" height="193"/>
+    </resources>
+</document>

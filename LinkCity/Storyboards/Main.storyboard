@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Acc-NG-mZH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Tab BarVC-->
+        <scene sceneID="Ub8-v6-Yrh">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVC" id="XM4-Fj-AiB" customClass="LCTabBarVC" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="E1z-8P-UKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZG-3w-uNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4692" y="1090.5"/>
+        </scene>
+        <!--SplashVC-->
+        <scene sceneID="Bar-yh-2Sa">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="Acc-NG-mZH" customClass="LCSplashVC" customModule="LinkCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vfn-gy-175"/>
+                        <viewControllerLayoutGuide type="bottom" id="bkn-v7-Fx4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yWH-3u-f8v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SplashDuckrIcon" translatesAutoresizingMaskIntoConstraints="NO" id="g2o-dY-xrZ">
+                                <rect key="frame" x="-1" y="130" width="376" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="EIG-23-Gc1"/>
+                                    <constraint firstAttribute="width" constant="375" id="ZgO-jr-Rca"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9M-b0-gDh">
+                                <rect key="frame" x="0.0" y="333" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="gfJ-fq-3VW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isl-jd-PMS">
+                                <rect key="frame" x="62" y="421" width="250" height="216"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdb-6f-JTN">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.99607843137254903" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="kIj-sO-5HB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="16"/>
+                                        <state key="normal" title="注册">
+                                            <color key="titleColor" red="0.5490196078431373" green="0.28235294117647058" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerButtonAction:" destination="Acc-NG-mZH" eventType="touchUpInside" id="GQt-Ak-NgM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luy-6d-k4O">
+                                        <rect key="frame" x="0.0" y="60" width="250" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.99607843137254903" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="p7G-Rn-3Sn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="16"/>
+                                        <state key="normal" title="登录">
+                                            <color key="titleColor" red="0.54901960780000003" green="0.28235294119999998" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonAction:" destination="Acc-NG-mZH" eventType="touchUpInside" id="Mx7-9x-DTS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGy-rc-vGP">
+                                        <rect key="frame" x="96" y="120" width="58" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="1Vx-Rh-Qc9"/>
+                                            <constraint firstAttribute="width" constant="58" id="4rq-ab-lie"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="14"/>
+                                        <state key="normal" title="立即体验">
+                                            <color key="titleColor" red="0.71372549019607845" green="0.47058823529411764" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tryButtonAction:" destination="Acc-NG-mZH" eventType="touchUpInside" id="bVD-Xn-eci"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用达客旅行，即表示您同意" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B55-lt-kyp">
+                                        <rect key="frame" x="54" y="182" width="143" height="13"/>
+                                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="11"/>
+                                        <color key="textColor" red="0.71372549019607845" green="0.47058823529411764" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btN-Xk-bnF">
+                                        <rect key="frame" x="76" y="198" width="99" height="25"/>
+                                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="11"/>
+                                        <state key="normal" title="使用条款和隐私政策">
+                                            <color key="titleColor" red="0.71372549019607845" green="0.47058823529411764" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="termButtonAction:" destination="Acc-NG-mZH" eventType="touchUpInside" id="vrW-Uw-Jn5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Tdb-6f-JTN" firstAttribute="top" secondItem="Isl-jd-PMS" secondAttribute="top" id="1bf-xq-ShF"/>
+                                    <constraint firstItem="Tdb-6f-JTN" firstAttribute="leading" secondItem="Isl-jd-PMS" secondAttribute="leading" id="1vc-5G-xCc"/>
+                                    <constraint firstItem="SGy-rc-vGP" firstAttribute="top" secondItem="luy-6d-k4O" secondAttribute="bottom" constant="20" id="C4g-2m-ofi"/>
+                                    <constraint firstAttribute="height" constant="216" id="HQq-GF-auR"/>
+                                    <constraint firstItem="btN-Xk-bnF" firstAttribute="centerX" secondItem="Isl-jd-PMS" secondAttribute="centerX" id="JDM-6h-6XU"/>
+                                    <constraint firstAttribute="bottom" secondItem="B55-lt-kyp" secondAttribute="bottom" constant="21" id="JlU-FB-NjI"/>
+                                    <constraint firstItem="luy-6d-k4O" firstAttribute="top" secondItem="Tdb-6f-JTN" secondAttribute="bottom" constant="20" id="NR3-iJ-f2A"/>
+                                    <constraint firstItem="SGy-rc-vGP" firstAttribute="centerX" secondItem="Isl-jd-PMS" secondAttribute="centerX" id="Tgi-Be-qUb"/>
+                                    <constraint firstAttribute="width" constant="250" id="cGz-HQ-SVL"/>
+                                    <constraint firstAttribute="trailing" secondItem="luy-6d-k4O" secondAttribute="trailing" id="dQD-Mo-Roa"/>
+                                    <constraint firstItem="luy-6d-k4O" firstAttribute="leading" secondItem="Isl-jd-PMS" secondAttribute="leading" id="dva-1u-szN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tdb-6f-JTN" secondAttribute="trailing" id="rRw-YJ-uYi"/>
+                                    <constraint firstAttribute="bottom" secondItem="btN-Xk-bnF" secondAttribute="bottom" constant="-7" id="tGz-qS-MYU"/>
+                                    <constraint firstItem="B55-lt-kyp" firstAttribute="centerX" secondItem="Isl-jd-PMS" secondAttribute="centerX" id="zO9-cS-km7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.8666666666666667" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q9M-b0-gDh" firstAttribute="leading" secondItem="yWH-3u-f8v" secondAttribute="leadingMargin" constant="-20" id="0YN-AT-43J"/>
+                            <constraint firstItem="Q9M-b0-gDh" firstAttribute="centerY" secondItem="yWH-3u-f8v" secondAttribute="centerY" id="C4t-aB-oEX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q9M-b0-gDh" secondAttribute="trailing" constant="-20" id="K4t-zb-Jk9"/>
+                            <constraint firstItem="Q9M-b0-gDh" firstAttribute="centerX" secondItem="yWH-3u-f8v" secondAttribute="centerX" id="Xmb-0X-tAJ"/>
+                            <constraint firstItem="g2o-dY-xrZ" firstAttribute="centerX" secondItem="yWH-3u-f8v" secondAttribute="centerX" id="bsm-ge-y2r"/>
+                            <constraint firstItem="bkn-v7-Fx4" firstAttribute="top" secondItem="Isl-jd-PMS" secondAttribute="bottom" constant="30" id="ftn-eE-zWa"/>
+                            <constraint firstItem="Q9M-b0-gDh" firstAttribute="top" secondItem="g2o-dY-xrZ" secondAttribute="bottom" constant="10" id="tsh-zp-UdN"/>
+                            <constraint firstItem="Isl-jd-PMS" firstAttribute="centerX" secondItem="yWH-3u-f8v" secondAttribute="centerX" id="ugA-Di-tj0"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tapView" destination="yWH-3u-f8v" id="u6R-O6-WnB"/>
+                        <outlet property="termButton" destination="btN-Xk-bnF" id="5dA-e8-fKB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUI-xE-TYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3996.5" y="1108.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SplashDuckrIcon" width="375" height="193"/>
+    </resources>
+</document>

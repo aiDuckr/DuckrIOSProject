@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LCCalendarChooseDateView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWe-XG-Qiy" userLabel="middleView">
+                    <rect key="frame" x="12" y="75" width="576" height="390"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EvL-NF-hx0" userLabel="bottomView">
+                            <rect key="frame" x="0.0" y="320" width="576" height="70"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNE-RT-CIY">
+                                    <rect key="frame" x="308" y="15" width="40" height="40"/>
+                                    <state key="normal" image="PlanTabChooseDateYesIcon"/>
+                                    <connections>
+                                        <action selector="chooseButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="aWZ-hc-5gj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LA-nu-cts">
+                                    <rect key="frame" x="228" y="15" width="40" height="40"/>
+                                    <state key="normal" image="PlanTabChooseDateNoIcon"/>
+                                    <connections>
+                                        <action selector="dismissButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="yBf-Pn-yfj"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="0LA-nu-cts" firstAttribute="trailing" secondItem="EvL-NF-hx0" secondAttribute="centerX" constant="-20" id="4zj-AL-e1a"/>
+                                <constraint firstAttribute="bottom" secondItem="0LA-nu-cts" secondAttribute="bottom" constant="15" id="Bdr-Fd-u0c"/>
+                                <constraint firstAttribute="bottom" secondItem="fNE-RT-CIY" secondAttribute="bottom" constant="15" id="NIL-dC-5tf"/>
+                                <constraint firstAttribute="height" constant="70" id="nqW-uB-AuR"/>
+                                <constraint firstItem="fNE-RT-CIY" firstAttribute="leading" secondItem="EvL-NF-hx0" secondAttribute="centerX" constant="20" id="nsP-2m-Vrk"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXa-sF-Csj" customClass="FSCalendar">
+                            <rect key="frame" x="0.0" y="0.0" width="576" height="320"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="preButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfG-6H-ybW">
+                                    <rect key="frame" x="72" y="15" width="21" height="22"/>
+                                    <state key="normal" image="PlanTabCalendarPreviousIcon">
+                                        <color key="titleColor" red="0.49019607840000001" green="0.47450980390000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="previousClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="zgv-Cb-4l7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="nextButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gc-27-tvT">
+                                    <rect key="frame" x="483" y="15" width="21" height="22"/>
+                                    <state key="normal" image="PlanTabCalendarNextIcon">
+                                        <color key="titleColor" red="0.49019607840000001" green="0.47450980390000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="nextClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="YQW-WE-hrv"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="4gc-27-tvT" secondAttribute="trailing" constant="72" id="ZKv-kQ-GCf"/>
+                                <constraint firstItem="MfG-6H-ybW" firstAttribute="leading" secondItem="qXa-sF-Csj" secondAttribute="leading" constant="72" id="dlh-dv-in0"/>
+                                <constraint firstItem="4gc-27-tvT" firstAttribute="top" secondItem="qXa-sF-Csj" secondAttribute="top" constant="15" id="gzr-5m-SiU"/>
+                                <constraint firstItem="MfG-6H-ybW" firstAttribute="top" secondItem="qXa-sF-Csj" secondAttribute="top" constant="15" id="mQS-ZV-OFv"/>
+                                <constraint firstAttribute="height" constant="320" id="o8i-XN-5VM"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                    <color key="value" red="0.49019607840000001" green="0.47450980390000003" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                    <color key="value" red="0.6705882353" green="0.65490196079999996" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleTodayColor">
+                                    <color key="value" red="0.67843137254901964" green="0.49803921568627452" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titlePlaceholderColor">
+                                    <color key="value" red="0.6705882353" green="0.65490196079999996" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleSelectionColor">
+                                    <color key="value" red="0.49803921569999998" green="0.28235294119999998" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="todaySelectionColor">
+                                    <color key="value" red="0.99607843139999996" green="0.86666666670000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                    <color key="value" red="0.99607843139999996" green="0.86666666670000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="EvL-NF-hx0" firstAttribute="top" secondItem="qXa-sF-Csj" secondAttribute="bottom" id="DpJ-j7-XZX"/>
+                        <constraint firstItem="qXa-sF-Csj" firstAttribute="top" secondItem="MWe-XG-Qiy" secondAttribute="top" id="HdH-0h-Vrw"/>
+                        <constraint firstItem="qXa-sF-Csj" firstAttribute="leading" secondItem="MWe-XG-Qiy" secondAttribute="leading" id="Ldc-o8-V3w"/>
+                        <constraint firstAttribute="bottom" secondItem="EvL-NF-hx0" secondAttribute="bottom" id="Rh6-gy-i8g"/>
+                        <constraint firstItem="EvL-NF-hx0" firstAttribute="leading" secondItem="MWe-XG-Qiy" secondAttribute="leading" id="Y1R-Oz-9Ks"/>
+                        <constraint firstAttribute="height" constant="390" id="gbI-ET-1oW"/>
+                        <constraint firstAttribute="trailing" secondItem="qXa-sF-Csj" secondAttribute="trailing" id="xpw-qh-8Xu"/>
+                        <constraint firstAttribute="trailing" secondItem="EvL-NF-hx0" secondAttribute="trailing" id="zJ5-gZ-xxD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.40088900862068966" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MWe-XG-Qiy" secondAttribute="trailing" constant="12" id="KNB-Da-NDa"/>
+                <constraint firstItem="MWe-XG-Qiy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="dhy-8F-aUM"/>
+                <constraint firstItem="MWe-XG-Qiy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="lSM-Tl-8JJ"/>
+            </constraints>
+            <connections>
+                <outlet property="calendar" destination="qXa-sF-Csj" id="ovc-7b-nL0"/>
+                <outlet property="middleView" destination="MWe-XG-Qiy" id="0Kw-QW-c8w"/>
+                <outlet property="nextButton" destination="4gc-27-tvT" id="Q4S-F8-VrI"/>
+                <outlet property="nextButtonMargin" destination="ZKv-kQ-GCf" id="3s9-XE-cY1"/>
+                <outlet property="previousButton" destination="MfG-6H-ybW" id="GrX-cI-Dik"/>
+                <outlet property="previousButtonMargin" destination="dlh-dv-in0" id="5Ct-Px-hrT"/>
+            </connections>
+            <point key="canvasLocation" x="373" y="294"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PlanTabCalendarNextIcon" width="21" height="21"/>
+        <image name="PlanTabCalendarPreviousIcon" width="21" height="21"/>
+        <image name="PlanTabChooseDateNoIcon" width="40" height="40"/>
+        <image name="PlanTabChooseDateYesIcon" width="40" height="40"/>
+    </resources>
+</document>

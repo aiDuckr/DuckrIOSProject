@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LCPlanDetailRouteCell" rowHeight="176" id="KGk-i7-Jjw" customClass="LCPlanDetailRouteCell" customModule="LinkCity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZt-lL-Wfc">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="271" verticalHuggingPriority="271" horizontalCompressionResistancePriority="770" verticalCompressionResistancePriority="770" misplaced="YES" text="出行路线：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teh-Dj-4tV">
+                                <rect key="frame" x="15" y="17" width="75" height="18"/>
+                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="15"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.1647058824" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlanDetailViewMoreIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1j7-q9-oii">
+                                <rect key="frame" x="337" y="19" width="8" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="Cz9-Cm-pk6"/>
+                                    <constraint firstAttribute="height" constant="13" id="GsM-x0-eAj"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1N-QI-umf" userLabel="bottomLine">
+                                <rect key="frame" x="0.0" y="49" width="360" height="1"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.89411764709999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="UAh-FX-rYD">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.constant">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="北京-天津-滨海新区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuj-gO-7WP">
+                                <rect key="frame" x="105" y="17" width="222" height="17"/>
+                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="15"/>
+                                <color key="textColor" red="0.49019607843137253" green="0.47450980392156861" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1j7-q9-oii" secondAttribute="trailing" constant="15" id="1tT-n3-HZj"/>
+                            <constraint firstItem="vuj-gO-7WP" firstAttribute="leading" secondItem="teh-Dj-4tV" secondAttribute="trailing" constant="15" id="62A-aL-KRA"/>
+                            <constraint firstItem="teh-Dj-4tV" firstAttribute="leading" secondItem="cZt-lL-Wfc" secondAttribute="leading" constant="15" id="B6c-02-WVP"/>
+                            <constraint firstItem="1j7-q9-oii" firstAttribute="centerY" secondItem="cZt-lL-Wfc" secondAttribute="centerY" id="CJl-uX-f98"/>
+                            <constraint firstItem="vuj-gO-7WP" firstAttribute="centerY" secondItem="cZt-lL-Wfc" secondAttribute="centerY" id="fNw-RN-FIN"/>
+                            <constraint firstAttribute="height" constant="50" id="fXt-7j-uFt"/>
+                            <constraint firstItem="F1N-QI-umf" firstAttribute="leading" secondItem="cZt-lL-Wfc" secondAttribute="leading" id="rpB-wE-ee6"/>
+                            <constraint firstItem="1j7-q9-oii" firstAttribute="leading" secondItem="vuj-gO-7WP" secondAttribute="trailing" constant="10" id="spi-bj-4Ls"/>
+                            <constraint firstAttribute="trailing" secondItem="F1N-QI-umf" secondAttribute="trailing" id="tqx-Y4-8f9"/>
+                            <constraint firstItem="teh-Dj-4tV" firstAttribute="centerY" secondItem="cZt-lL-Wfc" secondAttribute="centerY" id="wwp-qo-mOR"/>
+                            <constraint firstAttribute="bottom" secondItem="F1N-QI-umf" secondAttribute="bottom" id="yiN-YL-lbd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="cZt-lL-Wfc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9BX-RF-Z1o"/>
+                    <constraint firstItem="cZt-lL-Wfc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Fch-Jh-Kb9"/>
+                    <constraint firstAttribute="trailing" secondItem="cZt-lL-Wfc" secondAttribute="trailing" id="RCr-PS-p9q"/>
+                    <constraint firstAttribute="bottom" secondItem="cZt-lL-Wfc" secondAttribute="bottom" priority="750" id="srj-a9-HAV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="bottomLineLeading" destination="rpB-wE-ee6" id="qhU-wb-RHb"/>
+                <outlet property="bottomLineTrailing" destination="tqx-Y4-8f9" id="ere-9F-Sri"/>
+                <outlet property="bottomSpace" destination="srj-a9-HAV" id="JVJ-c4-Qkj"/>
+                <outlet property="routeLabel" destination="vuj-gO-7WP" id="yf3-XN-jcY"/>
+            </connections>
+            <point key="canvasLocation" x="218" y="299"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PlanDetailViewMoreIcon" width="7" height="13"/>
+    </resources>
+</document>

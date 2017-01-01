@@ -1,0 +1,49 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CTAssetsPickerController (3.1.1):
+    - PureLayout (~> 3.0.0)
+  - HappyDNS (0.2.3)
+  - MBProgressHUD (0.9.2)
+  - PureLayout (3.0.1)
+  - Qiniu (7.0.16):
+    - AFNetworking (~> 2.0)
+    - HappyDNS (~> 0.2)
+  - SSKeychain (1.4.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - CTAssetsPickerController (~> 3.1.0)
+  - MBProgressHUD (~> 0.9.1)
+  - Qiniu (~> 7.0)
+  - SSKeychain
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  CTAssetsPickerController: 6fba9134a230656ffe34ac0effb0060a1ead65cb
+  HappyDNS: 6d85942e64c28b4fa61f8c76580398f52d6d1d11
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+  Qiniu: 51a8702cddc02b50867e10cef99291b9a8a006b1
+  SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
+
+COCOAPODS: 0.39.0

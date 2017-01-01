@@ -1,0 +1,39 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "68936C2A9201EA133889B94D7ABEC599727E425E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "a0656cbe-0526-43c3-86cb-7a40e5b34988++1164" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F18EA64E4194FE1C6C039259F55BEC5AFFBACC3C" : 0,
+    "68936C2A9201EA133889B94D7ABEC599727E425E" : 0,
+    "a0656cbe-0526-43c3-86cb-7a40e5b34988++1164" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C3AA47BB-CD0B-4007-B30A-A7C74C67744E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F18EA64E4194FE1C6C039259F55BEC5AFFBACC3C" : "DuckrIOS\/",
+    "68936C2A9201EA133889B94D7ABEC599727E425E" : "DVCDuckr\/",
+    "a0656cbe-0526-43c3-86cb-7a40e5b34988++1164" : "trunk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LinkCity",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LinkCity.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:damnshoe\/DVCDuckr.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "68936C2A9201EA133889B94D7ABEC599727E425E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitserver:DuckrIOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F18EA64E4194FE1C6C039259F55BEC5AFFBACC3C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/182.92.230.117\/linkcity",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "a0656cbe-0526-43c3-86cb-7a40e5b34988++1164"
+    }
+  ]
+}

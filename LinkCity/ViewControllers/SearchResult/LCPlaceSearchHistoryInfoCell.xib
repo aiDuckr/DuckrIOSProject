@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="41" id="R3S-DR-yIe" customClass="LCPlaceSearchHistoryInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R3S-DR-yIe" id="q14-NZ-Rte">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="40.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bw-si-5Am">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目的地" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9W-20-Qki">
+                                <rect key="frame" x="12" y="16" width="351" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.6705882352941176" green="0.65490196078431373" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYX-0s-xiB">
+                                <rect key="frame" x="10" y="39" width="355" height="1"/>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.89411764705882346" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="tyL-DH-ajt">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.constant">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P9W-20-Qki" firstAttribute="leading" secondItem="7bw-si-5Am" secondAttribute="leading" constant="12" id="Khs-dK-KfB"/>
+                            <constraint firstAttribute="trailing" secondItem="P9W-20-Qki" secondAttribute="trailing" constant="12" id="Nca-GC-FBF"/>
+                            <constraint firstItem="PYX-0s-xiB" firstAttribute="leading" secondItem="7bw-si-5Am" secondAttribute="leading" constant="10" id="RTg-Ls-Yev"/>
+                            <constraint firstAttribute="bottom" secondItem="P9W-20-Qki" secondAttribute="bottom" constant="6" id="TQb-DD-npf"/>
+                            <constraint firstAttribute="bottom" secondItem="PYX-0s-xiB" secondAttribute="bottom" id="dnu-4b-08B"/>
+                            <constraint firstAttribute="height" constant="40" id="jle-XU-0ru"/>
+                            <constraint firstAttribute="trailing" secondItem="PYX-0s-xiB" secondAttribute="trailing" constant="10" id="prO-7S-78d"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7bw-si-5Am" firstAttribute="leading" secondItem="q14-NZ-Rte" secondAttribute="leading" id="UU3-Ry-wIx"/>
+                    <constraint firstAttribute="bottom" secondItem="7bw-si-5Am" secondAttribute="bottom" id="loE-WV-IOi"/>
+                    <constraint firstAttribute="trailing" secondItem="7bw-si-5Am" secondAttribute="trailing" id="r7f-fi-hrf"/>
+                    <constraint firstItem="7bw-si-5Am" firstAttribute="top" secondItem="q14-NZ-Rte" secondAttribute="top" id="xy2-1E-QBh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="historyPlaceLabel" destination="P9W-20-Qki" id="1Rz-lq-JTH"/>
+            </connections>
+            <point key="canvasLocation" x="-38.5" y="284.5"/>
+        </tableViewCell>
+    </objects>
+</document>

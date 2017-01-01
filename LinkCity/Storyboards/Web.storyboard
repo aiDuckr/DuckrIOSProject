@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--WebVC-->
+        <scene sceneID="lYa-EC-xsK">
+            <objects>
+                <viewController storyboardIdentifier="WebVC" id="Aqv-B4-Rsd" customClass="LCWebVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gvx-de-ybI"/>
+                        <viewControllerLayoutGuide type="bottom" id="GtN-bw-mtN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AAh-HH-8ht">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEa-Fv-848">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IEa-Fv-848" firstAttribute="top" secondItem="gvx-de-ybI" secondAttribute="bottom" id="MD1-q2-sh1"/>
+                            <constraint firstItem="IEa-Fv-848" firstAttribute="leading" secondItem="AAh-HH-8ht" secondAttribute="leading" id="ZYF-Zz-nI5"/>
+                            <constraint firstItem="GtN-bw-mtN" firstAttribute="bottom" secondItem="IEa-Fv-848" secondAttribute="bottom" id="j4S-cn-Xfr"/>
+                            <constraint firstAttribute="trailing" secondItem="IEa-Fv-848" secondAttribute="trailing" id="jkB-Sk-INu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="IEa-Fv-848"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="j4S-cn-Xfr"/>
+                                <exclude reference="MD1-q2-sh1"/>
+                                <exclude reference="ZYF-Zz-nI5"/>
+                                <exclude reference="jkB-Sk-INu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="IEa-Fv-848"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="j4S-cn-Xfr"/>
+                                <include reference="MD1-q2-sh1"/>
+                                <include reference="ZYF-Zz-nI5"/>
+                                <include reference="jkB-Sk-INu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="SWh-eG-Act"/>
+                    <connections>
+                        <outlet property="webView" destination="IEa-Fv-848" id="RbY-oJ-lyY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6y-Pe-gls" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1543.5" y="363"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gKr-eO-oLd">
+            <objects>
+                <navigationController storyboardIdentifier="WebNavigationVC" automaticallyAdjustsScrollViewInsets="NO" id="nDu-yd-TdC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u84-qD-5qc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Aqv-B4-Rsd" kind="relationship" relationship="rootViewController" id="Tzh-2S-7mc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiO-OG-W6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625.5" y="363"/>
+        </scene>
+    </scenes>
+</document>

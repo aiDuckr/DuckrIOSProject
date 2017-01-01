@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LCSendFreePlanDescCell" rowHeight="160" id="dea-LW-fa3" customClass="LCSendFreePlanDescCell">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="dea-LW-fa3" id="yLQ-f3-CiR">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rdj-Dg-xnc" userLabel="DescCell">
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="160"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWh-zo-2kM" customClass="SZTextView">
+                                <rect key="frame" x="10" y="40" width="362" height="105"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="7Fp-2w-4yg"/>
+                                </constraints>
+                                <color key="textColor" red="0.17254901959999999" green="0.1647058824" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="可以写下您的自我介绍、旅行计划、邀约要求等"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gki-QZ-d3Z" userLabel="title">
+                                <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="邀约简介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1W-rB-BB5">
+                                        <rect key="frame" x="12" y="15" width="60" height="17"/>
+                                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="15"/>
+                                        <color key="textColor" red="0.17254901959999999" green="0.1647058824" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="W1W-rB-BB5" firstAttribute="top" secondItem="Gki-QZ-d3Z" secondAttribute="top" constant="15" id="CWv-hS-7Zw"/>
+                                    <constraint firstItem="W1W-rB-BB5" firstAttribute="leading" secondItem="Gki-QZ-d3Z" secondAttribute="leading" constant="12" id="fqy-Dl-t5R"/>
+                                    <constraint firstAttribute="height" constant="40" id="iaI-jv-Gah"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DWh-zo-2kM" secondAttribute="trailing" constant="10" id="4qt-dU-fbK"/>
+                            <constraint firstItem="Gki-QZ-d3Z" firstAttribute="leading" secondItem="rdj-Dg-xnc" secondAttribute="leading" id="5C4-bs-eSo"/>
+                            <constraint firstItem="DWh-zo-2kM" firstAttribute="top" secondItem="Gki-QZ-d3Z" secondAttribute="bottom" id="HVf-X3-wJV"/>
+                            <constraint firstAttribute="height" constant="160" id="K76-Ie-zO6"/>
+                            <constraint firstAttribute="trailing" secondItem="Gki-QZ-d3Z" secondAttribute="trailing" id="Kcc-Qo-prT"/>
+                            <constraint firstAttribute="bottom" secondItem="DWh-zo-2kM" secondAttribute="bottom" constant="15" id="b9h-Go-z7l"/>
+                            <constraint firstItem="DWh-zo-2kM" firstAttribute="leading" secondItem="rdj-Dg-xnc" secondAttribute="leading" constant="10" id="gZu-HW-PmD"/>
+                            <constraint firstItem="Gki-QZ-d3Z" firstAttribute="top" secondItem="rdj-Dg-xnc" secondAttribute="top" id="k52-4d-Osc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="rdj-Dg-xnc" secondAttribute="trailing" id="Y4w-HF-cvD"/>
+                    <constraint firstAttribute="bottom" secondItem="rdj-Dg-xnc" secondAttribute="bottom" id="bfa-So-VQb"/>
+                    <constraint firstItem="rdj-Dg-xnc" firstAttribute="top" secondItem="yLQ-f3-CiR" secondAttribute="top" id="cxF-Yn-Uf2"/>
+                    <constraint firstItem="rdj-Dg-xnc" firstAttribute="leading" secondItem="yLQ-f3-CiR" secondAttribute="leading" id="pcy-yr-URc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="descTextView" destination="DWh-zo-2kM" id="MaV-aV-gtq"/>
+            </connections>
+            <point key="canvasLocation" x="-415" y="239"/>
+        </tableViewCell>
+    </objects>
+</document>

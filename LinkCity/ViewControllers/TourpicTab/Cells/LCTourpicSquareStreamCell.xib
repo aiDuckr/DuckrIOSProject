@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="166" id="KGk-i7-Jjw" customClass="LCTourpicSquareStreamCell">
+            <rect key="frame" x="0.0" y="0.0" width="257" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="257" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m94-q0-uex" userLabel="Label2">
+                        <rect key="frame" x="207" y="16" width="32" height="14"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.15207435344827586" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhX-qn-0rL">
+                        <rect key="frame" x="0.0" y="0.0" width="257" height="166"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hhX-qn-0rL" secondAttribute="height" multiplier="257:165" id="4cH-Zs-4Gq"/>
+                            <constraint firstAttribute="width" secondItem="hhX-qn-0rL" secondAttribute="height" multiplier="257:165" id="Hfr-an-F2d"/>
+                            <constraint firstAttribute="width" constant="257" id="hek-Lx-q5b"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDD-ww-9Yt">
+                        <rect key="frame" x="193" y="144" width="46" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="7Ri-GN-gBZ"/>
+                            <constraint firstAttribute="height" constant="19" id="ALp-cf-oQR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                        <state key="normal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ToupicVideoPlayIcon" translatesAutoresizingMaskIntoConstraints="NO" id="pWs-62-jPp">
+                        <rect key="frame" x="101" y="59" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="efZ-v7-FqS"/>
+                            <constraint firstAttribute="width" constant="56" id="s0B-LQ-FoO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngw-8h-zfi">
+                        <rect key="frame" x="18" y="142" width="112" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="111.5" id="vsY-3J-QhZ" userLabel="width = 100"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="m94-q0-uex" secondAttribute="trailing" constant="10" id="3UM-3J-jJ8"/>
+                    <constraint firstItem="hhX-qn-0rL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8k1-ue-8oH"/>
+                    <constraint firstItem="m94-q0-uex" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="9Ia-KY-Bhc"/>
+                    <constraint firstItem="pWs-62-jPp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Bte-a0-LKd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hhX-qn-0rL" secondAttribute="bottom" id="LT2-zw-xaI"/>
+                    <constraint firstAttribute="bottom" secondItem="mDD-ww-9Yt" secondAttribute="bottom" constant="10" id="Sp7-U0-KGf"/>
+                    <constraint firstItem="Ngw-8h-zfi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Uho-mI-BKT"/>
+                    <constraint firstItem="hhX-qn-0rL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ujf-fC-fm7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mDD-ww-9Yt" secondAttribute="trailing" constant="10" id="XDW-zs-cYB"/>
+                    <constraint firstItem="pWs-62-jPp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZtM-4g-11C"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ngw-8h-zfi" secondAttribute="bottom" constant="10" id="t91-WJ-86u"/>
+                    <constraint firstItem="hhX-qn-0rL" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="uJ4-Ig-SFh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="pWs-62-jPp" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="bZT-Mb-X4a"/>
+            </constraints>
+            <connections>
+                <outlet property="TourpicVideoIcon" destination="pWs-62-jPp" id="DK3-gk-fUv"/>
+                <outlet property="locationLabel" destination="Ngw-8h-zfi" id="HXt-sB-9lC"/>
+                <outlet property="photoCountLabel" destination="m94-q0-uex" id="vgk-xj-R6e"/>
+                <outlet property="thumbUpButton" destination="mDD-ww-9Yt" id="Yuz-cy-2AH"/>
+                <outlet property="tourPicImageView" destination="hhX-qn-0rL" id="akT-Ho-fm1"/>
+            </connections>
+            <point key="canvasLocation" x="239.5" y="135"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ToupicVideoPlayIcon" width="56" height="56"/>
+    </resources>
+</document>

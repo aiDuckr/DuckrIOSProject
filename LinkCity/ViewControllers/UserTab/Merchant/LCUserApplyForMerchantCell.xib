@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="46" id="KGk-i7-Jjw" customClass="LCUserApplyForMerchantCell">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="45.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipu-Ef-F3o">
+                        <rect key="frame" x="0.0" y="0.0" width="408" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yii-Yp-sl5">
+                                <rect key="frame" x="12" y="14" width="40" height="18"/>
+                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="15"/>
+                                <color key="textColor" red="0.17254901960784313" green="0.16470588235294117" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserApplyForMerchantJump" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-WZ-a5g">
+                                <rect key="frame" x="389" y="16" width="7" height="13"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yii-Yp-sl5" firstAttribute="centerY" secondItem="ipu-Ef-F3o" secondAttribute="centerY" id="EbI-Z5-okz"/>
+                            <constraint firstItem="TRb-WZ-a5g" firstAttribute="centerY" secondItem="ipu-Ef-F3o" secondAttribute="centerY" id="Yoj-R8-Yhp"/>
+                            <constraint firstAttribute="trailing" secondItem="TRb-WZ-a5g" secondAttribute="trailing" constant="12" id="hjN-Ju-SNv"/>
+                            <constraint firstItem="yii-Yp-sl5" firstAttribute="leading" secondItem="ipu-Ef-F3o" secondAttribute="leading" constant="12" id="lf9-QY-ThB"/>
+                            <constraint firstAttribute="height" constant="45" id="tTB-nk-Xq8"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZx-zs-D3r" userLabel="Separate Line">
+                        <rect key="frame" x="12" y="45" width="384" height="1"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="wLK-nf-XVf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FZx-zs-D3r" secondAttribute="trailing" constant="12" id="1G6-89-13J"/>
+                    <constraint firstItem="FZx-zs-D3r" firstAttribute="top" secondItem="ipu-Ef-F3o" secondAttribute="bottom" id="GpT-Yz-4JM"/>
+                    <constraint firstItem="ipu-Ef-F3o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UzM-Pe-zeb"/>
+                    <constraint firstItem="FZx-zs-D3r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="b5j-Yd-0G3"/>
+                    <constraint firstItem="ipu-Ef-F3o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fuA-Tm-L80"/>
+                    <constraint firstAttribute="bottom" secondItem="FZx-zs-D3r" secondAttribute="bottom" id="oXo-Pl-sbt"/>
+                    <constraint firstAttribute="trailing" secondItem="ipu-Ef-F3o" secondAttribute="trailing" id="yzn-Vg-VdJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="yii-Yp-sl5" id="eRW-LL-bYf"/>
+                <outlet property="separateLineHeight" destination="wLK-nf-XVf" id="J2u-Nf-1VH"/>
+            </connections>
+            <point key="canvasLocation" x="728" y="421"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="UserApplyForMerchantJump" width="7" height="13"/>
+    </resources>
+</document>

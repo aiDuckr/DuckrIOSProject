@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LCChatSectionHeaderView" id="U6b-Vx-4bR" customClass="LCChatSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XgA-Ko-7Uy" userLabel="topLine">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.89411764709999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="LO2-8V-Iqv">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="constant">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="LO2-8V-Iqv"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="LO2-8V-Iqv"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="群成员" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnm-FN-lYM">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                    <color key="textColor" red="0.6588235294117647" green="0.64313725490196072" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="15" y="18" width="39" height="15"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZG-va-yYD">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                    <color key="textColor" red="0.6588235294117647" green="0.64313725490196072" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="261" y="18" width="44" height="15"/>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbU-eg-0Ar" userLabel="bottomLine">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.89411764709999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KVG-lY-yqq">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="constant">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KVG-lY-yqq"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="KVG-lY-yqq"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.95294117649999999" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vbU-eg-0Ar" secondAttribute="bottom" constant="24" id="0Eh-lg-vVq">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="FZG-va-yYD" secondAttribute="trailing" constant="15" id="Ey6-6O-c4A"/>
+                <constraint firstItem="XgA-Ko-7Uy" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="-30" id="FC8-tr-bS6">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="XgA-Ko-7Uy" secondAttribute="trailing" constant="-30" id="FWB-bA-x9h">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="FZG-va-yYD" secondAttribute="centerY" id="Fr0-Wp-yOv"/>
+                <constraint firstItem="gnm-FN-lYM" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="15" id="GUi-8A-VjT"/>
+                <constraint firstAttribute="trailing" secondItem="vbU-eg-0Ar" secondAttribute="trailing" constant="-30" id="JhU-vN-o7s">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="XgA-Ko-7Uy" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="25" id="hWC-HT-7gV">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="vbU-eg-0Ar" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="-30" id="lxL-CQ-13d">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="gnm-FN-lYM" secondAttribute="centerY" id="uKa-Zr-RFG"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="XgA-Ko-7Uy"/>
+                    <exclude reference="gnm-FN-lYM"/>
+                    <exclude reference="FZG-va-yYD"/>
+                    <exclude reference="vbU-eg-0Ar"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Ey6-6O-c4A"/>
+                    <exclude reference="Fr0-Wp-yOv"/>
+                    <exclude reference="GUi-8A-VjT"/>
+                    <exclude reference="uKa-Zr-RFG"/>
+                    <exclude reference="FC8-tr-bS6"/>
+                    <exclude reference="FWB-bA-x9h"/>
+                    <exclude reference="hWC-HT-7gV"/>
+                    <exclude reference="0Eh-lg-vVq"/>
+                    <exclude reference="JhU-vN-o7s"/>
+                    <exclude reference="lxL-CQ-13d"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="XgA-Ko-7Uy"/>
+                    <include reference="gnm-FN-lYM"/>
+                    <include reference="FZG-va-yYD"/>
+                    <include reference="vbU-eg-0Ar"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Ey6-6O-c4A"/>
+                    <include reference="Fr0-Wp-yOv"/>
+                    <include reference="GUi-8A-VjT"/>
+                    <include reference="uKa-Zr-RFG"/>
+                    <include reference="FC8-tr-bS6"/>
+                    <include reference="FWB-bA-x9h"/>
+                    <include reference="hWC-HT-7gV"/>
+                    <include reference="0Eh-lg-vVq"/>
+                    <include reference="JhU-vN-o7s"/>
+                    <include reference="lxL-CQ-13d"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="bottomLine" destination="vbU-eg-0Ar" id="KB7-HC-JAN"/>
+                <outlet property="leftLabel" destination="gnm-FN-lYM" id="2GF-aI-OP7"/>
+                <outlet property="rightLabel" destination="FZG-va-yYD" id="XLY-aT-0a7"/>
+                <outlet property="topLine" destination="XgA-Ko-7Uy" id="7oi-dS-hGA"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>

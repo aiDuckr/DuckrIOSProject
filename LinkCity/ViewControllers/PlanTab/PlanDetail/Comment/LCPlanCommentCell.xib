@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LCPlanCommentCell" rowHeight="431" id="UFg-Vz-oDK" userLabel="ACommentCell" customClass="LCPlanCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UFg-Vz-oDK" id="aeO-OZ-m7J">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="bg6-lO-sLI">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="3rp-a0-HTN"/>
+                            <constraint firstAttribute="width" constant="40" id="whY-EK-tcS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3rp-a0-HTN"/>
+                                <exclude reference="whY-EK-tcS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3rp-a0-HTN"/>
+                                <include reference="whY-EK-tcS"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpg-57-bxL" userLabel="AvatarButton">
+                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="avatarButtonAction:" destination="UFg-Vz-oDK" eventType="touchUpInside" id="qU4-Tj-SMi"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张宗硕" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAL-r7-tGM" userLabel="Name">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="15"/>
+                        <color key="textColor" red="0.47450980390000003" green="0.41960784309999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刚刚" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRW-hO-NmD" userLabel="Time">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="12"/>
+                        <color key="textColor" red="0.78823529410000004" green="0.7725490196" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OED-DQ-89R" userLabel="BottomLine">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.89411764709999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="RNg-jO-ETu">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="constant">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RNg-jO-ETu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="RNg-jO-ETu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="叔叔，我们不约！叔叔，我们不约！叔叔，我们不约！叔叔，我们不约！叔叔，我们不约！叔叔，我们不约！叔叔，我们不约！叔叔，我们不约！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI2-3V-bJZ" userLabel="Comment">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                        <color key="textColor" red="0.6588235294" green="0.64313725489999995" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="dI2-3V-bJZ" secondAttribute="bottom" constant="14" id="0Gf-m1-MNX"/>
+                    <constraint firstItem="bg6-lO-sLI" firstAttribute="leading" secondItem="xpg-57-bxL" secondAttribute="leading" constant="-218" id="6qu-kN-bZJ">
+                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                    </constraint>
+                    <constraint firstItem="bg6-lO-sLI" firstAttribute="trailing" secondItem="xpg-57-bxL" secondAttribute="trailing" constant="-224" id="I0e-tN-Tcq">
+                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                    </constraint>
+                    <constraint firstItem="dI2-3V-bJZ" firstAttribute="top" secondItem="aeO-OZ-m7J" secondAttribute="top" constant="40" id="Nvw-f5-m19"/>
+                    <constraint firstItem="bg6-lO-sLI" firstAttribute="leading" secondItem="aeO-OZ-m7J" secondAttribute="leading" constant="15" id="Ox4-Hh-bjV"/>
+                    <constraint firstItem="bg6-lO-sLI" firstAttribute="top" secondItem="xpg-57-bxL" secondAttribute="top" constant="-65" id="Vjs-vf-Gkd">
+                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                    </constraint>
+                    <constraint firstAttribute="bottom" secondItem="OED-DQ-89R" secondAttribute="bottom" id="WjI-58-l22"/>
+                    <constraint firstItem="gAL-r7-tGM" firstAttribute="leading" secondItem="bg6-lO-sLI" secondAttribute="trailing" constant="6" id="Yjx-Eg-M5Y"/>
+                    <constraint firstAttribute="trailing" secondItem="OED-DQ-89R" secondAttribute="trailing" constant="86" id="ZUm-bU-jkx">
+                        <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                    </constraint>
+                    <constraint firstItem="bg6-lO-sLI" firstAttribute="top" secondItem="eRW-hO-NmD" secondAttribute="top" constant="-9" id="Zwd-1l-5Kb">
+                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                    </constraint>
+                    <constraint firstAttribute="trailing" secondItem="dI2-3V-bJZ" secondAttribute="trailing" constant="15" id="bft-Bc-YAs"/>
+                    <constraint firstItem="bg6-lO-sLI" firstAttribute="top" secondItem="aeO-OZ-m7J" secondAttribute="top" constant="14" id="fOx-bO-WeB"/>
+                    <constraint firstItem="bg6-lO-sLI" firstAttribute="bottom" secondItem="xpg-57-bxL" secondAttribute="bottom" constant="-55" id="oLN-2P-QZ7">
+                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                    </constraint>
+                    <constraint firstAttribute="trailingMargin" secondItem="gAL-r7-tGM" secondAttribute="trailing" constant="351" id="oex-2N-nqk">
+                        <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                    </constraint>
+                    <constraint firstAttribute="trailing" secondItem="eRW-hO-NmD" secondAttribute="trailing" constant="15" id="s5W-KJ-xMF"/>
+                    <constraint firstItem="gAL-r7-tGM" firstAttribute="top" secondItem="bg6-lO-sLI" secondAttribute="top" constant="4" id="sWc-Ip-LKS">
+                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                    </constraint>
+                    <constraint firstItem="OED-DQ-89R" firstAttribute="leading" secondItem="aeO-OZ-m7J" secondAttribute="leading" constant="12" id="yWI-M3-DQo"/>
+                    <constraint firstItem="dI2-3V-bJZ" firstAttribute="leading" secondItem="bg6-lO-sLI" secondAttribute="trailing" constant="6" id="zfM-zr-bcz"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="bg6-lO-sLI"/>
+                        <exclude reference="xpg-57-bxL"/>
+                        <exclude reference="gAL-r7-tGM"/>
+                        <exclude reference="eRW-hO-NmD"/>
+                        <exclude reference="OED-DQ-89R"/>
+                        <exclude reference="dI2-3V-bJZ"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="0Gf-m1-MNX"/>
+                        <exclude reference="Nvw-f5-m19"/>
+                        <exclude reference="bft-Bc-YAs"/>
+                        <exclude reference="zfM-zr-bcz"/>
+                        <exclude reference="s5W-KJ-xMF"/>
+                        <exclude reference="Yjx-Eg-M5Y"/>
+                        <exclude reference="oex-2N-nqk"/>
+                        <exclude reference="sWc-Ip-LKS"/>
+                        <exclude reference="6qu-kN-bZJ"/>
+                        <exclude reference="I0e-tN-Tcq"/>
+                        <exclude reference="Ox4-Hh-bjV"/>
+                        <exclude reference="Vjs-vf-Gkd"/>
+                        <exclude reference="Zwd-1l-5Kb"/>
+                        <exclude reference="fOx-bO-WeB"/>
+                        <exclude reference="oLN-2P-QZ7"/>
+                        <exclude reference="WjI-58-l22"/>
+                        <exclude reference="ZUm-bU-jkx"/>
+                        <exclude reference="yWI-M3-DQo"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="bg6-lO-sLI"/>
+                        <include reference="xpg-57-bxL"/>
+                        <include reference="gAL-r7-tGM"/>
+                        <include reference="eRW-hO-NmD"/>
+                        <include reference="OED-DQ-89R"/>
+                        <include reference="dI2-3V-bJZ"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="0Gf-m1-MNX"/>
+                        <include reference="Nvw-f5-m19"/>
+                        <include reference="bft-Bc-YAs"/>
+                        <include reference="zfM-zr-bcz"/>
+                        <include reference="s5W-KJ-xMF"/>
+                        <include reference="Yjx-Eg-M5Y"/>
+                        <include reference="oex-2N-nqk"/>
+                        <include reference="sWc-Ip-LKS"/>
+                        <include reference="6qu-kN-bZJ"/>
+                        <include reference="I0e-tN-Tcq"/>
+                        <include reference="Ox4-Hh-bjV"/>
+                        <include reference="Vjs-vf-Gkd"/>
+                        <include reference="Zwd-1l-5Kb"/>
+                        <include reference="fOx-bO-WeB"/>
+                        <include reference="oLN-2P-QZ7"/>
+                        <include reference="WjI-58-l22"/>
+                        <include reference="ZUm-bU-jkx"/>
+                        <include reference="yWI-M3-DQo"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="avatarImageView" destination="bg6-lO-sLI" id="fnL-BY-c31"/>
+                <outlet property="commentLabel" destination="dI2-3V-bJZ" id="E27-q8-y9j"/>
+                <outlet property="nameLabel" destination="gAL-r7-tGM" id="kUX-wr-gu6"/>
+                <outlet property="timeLabel" destination="eRW-hO-NmD" id="AmP-Mg-fpl"/>
+            </connections>
+            <point key="canvasLocation" x="149" y="579"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DefaultAvatar" width="70" height="70"/>
+    </resources>
+</document>

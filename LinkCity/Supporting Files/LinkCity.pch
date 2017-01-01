@@ -1,0 +1,284 @@
+//
+//  LinkCityPrefixHeader.pch
+//  LinkCity
+//
+//  Created by roy on 10/25/14.
+//  Copyright (c) 2014 linkcity. All rights reserved.
+//
+
+#ifndef LinkCity_pch
+#define LinkCity_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma 日志相关 begin
+
+#ifdef DEBUG
+    #define ZLog(...) NSLog(__VA_ARGS__)
+    #define DLog(...) /* */
+    #define RLog(...) /* */
+    #define ELog(...) /* */
+#else
+    #define DLog(...) /* */
+    #define RLog(...) /* */
+    #define ZLog(...) /* */
+    #define ELog(...) /* */
+#endif
+
+#define ALog(...) NSLog(__VA_ARGS__)
+
+#pragma 日志相关 end
+
+
+#pragma 服务器前缀地址 begin
+
+//#define XMPP_SERVER_PORT 5222
+//
+//
+//#define DEBUG_SERVER_HOST       @"http://182.92.230.117/"
+//#define DEBUG_SERVER_URL_PREFIX @"http://182.92.230.117/api/"
+//#define DEBUG_S_SERVER_URL_PREFIX @"http://182.92.230.117/api/"
+//#define DEBUG_XMPP_SERVER_NAME  @"182.92.230.117"
+//#define DEBUG_XMPP_SERVER_IP    @"182.92.230.117"
+//
+//#define RELEASE_SERVER_HOST         @"http://www.duckr.cn/"
+//#define RELEASE_SERVER_URL_PREFIX   @"http://www.duckr.cn/api/"
+//#define RELEASE_S_SERVER_URL_PREFIX   @"https://www.duckr.cn/api/"
+//#define RELEASE_XMPP_SERVER_NAME    @"duckrchat"
+//#define RELEASE_XMPP_SERVER_IP      @"chat.duckr.cn"
+//
+//#ifdef DEBUG
+//    #define SERVER_HOST [LCDataManager sharedInstance].useReleaseServerForDebug? \
+//        RELEASE_SERVER_HOST: DEBUG_SERVER_HOST
+//    #define SERVER_URL_PREFIX [LCDataManager sharedInstance].useReleaseServerForDebug? \
+//        RELEASE_SERVER_URL_PREFIX: DEBUG_SERVER_URL_PREFIX
+//    #define S_SERVER_URL_PREFIX [LCDataManager sharedInstance].useReleaseServerForDebug? \
+//        RELEASE_S_SERVER_URL_PREFIX: DEBUG_S_SERVER_URL_PREFIX
+//    #define XMPP_SERVER_NAME [LCDataManager sharedInstance].useReleaseServerForDebug? \
+//        RELEASE_XMPP_SERVER_NAME: DEBUG_XMPP_SERVER_NAME
+//    #define XMPP_SERVER_IP [LCDataManager sharedInstance].useReleaseServerForDebug? \
+//        RELEASE_XMPP_SERVER_IP : DEBUG_XMPP_SERVER_IP
+//#else
+//    #define SERVER_HOST RELEASE_SERVER_HOST
+//    #define SERVER_URL_PREFIX RELEASE_SERVER_URL_PREFIX
+//    #define S_SERVER_URL_PREFIX RELEASE_S_SERVER_URL_PREFIX
+//    #define XMPP_SERVER_NAME RELEASE_XMPP_SERVER_NAME
+//    #define XMPP_SERVER_IP RELEASE_XMPP_SERVER_IP
+//#endif
+
+//#define SERVER_HOST         DEBUG_SERVER_HOST
+//#define SERVER_URL_PREFIX   DEBUG_SERVER_URL_PREFIX
+//#define S_SERVER_URL_PREFIX DEBUG_S_SERVER_URL_PREFIX
+//#define XMPP_SERVER_NAME    DEBUG_XMPP_SERVER_NAME
+//#define XMPP_SERVER_IP      DEBUG_XMPP_SERVER_IP
+
+
+#define QINIU_VIDEO_DOMAIN @"http://video.duckr.cn/"
+#define QINIU_DOMAIN @"http://download.duckr.cn/"
+
+#pragma 服务器前缀地址 end
+
+#endif
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import "LCLogManager.h"
+    #import "LCConstants.h"
+    #import "LCImageUtil.h"
+    #import "LCStringUtil.h"
+    #import "LCDecimalUtil.h"
+    #import "LCDateUtil.h"
+    #import "LCBaseVC.h"
+    #import "LCAutoRefreshVC.h"
+    #import "LCBaseCollectionVC.h"
+    #import "LCNetRequester.h"
+    #import "LCNetRequester+Plan.h"
+    #import "LCNetRequester+Homepage.h"
+    #import "LCNetRequester+Tourpic.h"
+    #import "LCNetRequester+User.h"
+    #import "LCNetRequester+Order.h"
+    #import "LCNetRequester+Local.h"
+    #import "LCRegisterAndLoginHelper.h"
+    #import "LCPopViewHelper.h"
+    #import "LCRedDotHelper.h"
+    #import "LCViewSwitcher.h"
+    #import "UIButton+AFNetworking.h"
+    #import "UIImageView+AFNetworking.h"
+    #import "UIButton+ImageAndTitle.h"
+    #import "UILabel+LineSpace.h"
+    #import "UITextView+LineSpace.h"
+    #import "UIView+ConstraintDebug.h"
+    #import "LCDataManager.h"
+    #import "EMChatServiceDefs.h"
+    #import "YSAlertUtil.h"
+    #import "LCSharedFuncUtil.h"
+    #import "UIViewController+HUD.h"
+    #import "UMMobClick/MobClick.h"
+    #import "LCStoryboardManager.h"
+    #import "UIImageView+AFNetworking.h"
+    #import "UILabel+FitSize.h"
+    #import "UIScrollView+Page.h"
+    #import "LCAppConfigManager.h"
+    #import "LCSendPlanHelper.h"
+    #import "UIView+FrameHelper.h"
+    #import "LCDelegateManager.h"
+    #import "LCDataBufferManager.h"
+#endif
+
+
+#define THROW(exceptionClass, message) throw exceptionClass(__FILE__, __LINE__, (message) )
+#define DEVICE_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define DEVICE_HEIGHT   [UIScreen mainScreen].bounds.size.height
+#define DEVICE_IPHONE6_WIDTH 375
+#define DEVICE_IPHONE6_HEIGHT 667
+
+#define NAVIGATION_BAR_HEIGHT 44
+#define STATUS_BAR_HEIGHT 20
+#define TAB_BAR_HEIGHT 49
+
+#define IS_IPHONE_4_4S     (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)480) < DBL_EPSILON)
+#define IS_IPHONE_5_5S     (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)568) < DBL_EPSILON)
+#define IS_IPHONE_6     (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)667) < DBL_EPSILON)
+#define IS_IPHONE_6_PLUS     (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)736) < DBL_EPSILON)
+
+#define SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define APP_LOCAL_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+#define APP_LOCAL_SHOT_VERSION_STRING [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+#define UIColorFromRGBA(rgbValue, a) [UIColor \
+        colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+        green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+        blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+
+//在#define里面\代表换行！！！
+#define BLUR_IMAGE_PIXEL 6
+#define SCALE_VALUE 1.0
+#define PIC_QUALITY 0.8
+#define MAX_IMAGE_SIZE_TO_UPLOAD 200*1024
+#define MAX_THUMB_IMAGE_SIZE_TO_UPLOAD 40*1024
+
+#define UIColorFromR_G_B_A(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define LCDefaultFontSize(Size) [UIFont fontWithName:@"FZLanTingHeiS-R-GB" size:Size]
+#define APP_ANIMATION YES
+
+#define APP_DOWNLOAD_URL @"https://itunes.apple.com/cn/app/lian-cheng/id916449492?mt=8"
+
+#define UMENG_APP_KEY @"544fa9e4fd98c5a609008dae"
+#define UMENG_WEIXIN_APP_ID @"wx18a5f802e5e464e0"
+#define UMENG_WEIXIN_APP_SECRET @"6eea4567557edb7b492a13ec40fbc876"
+#define UMENG_QQ_APP_ID @"1104554680"
+#define UMENG_QQ_APP_SECRET @"fzdLVDYOfspxd47n"
+
+#define PIC_PNG_TYPE @"image/png"
+#define PIC_JPG_TYPE @"image/jpg"
+
+/// 计划类型.
+#define PLAN_TYPE_ALL_STR @"0"
+#define PLAN_TYPE_PARNTER_STR @"1"
+#define PLAN_TYPE_RECEPTION_STR @"2"
+
+/// 客服聊天ID.
+#define DUKCR_SERVICE_ID    @"13260129919"
+/// 友盟回调网址
+#define APP_UMENG_BACK_URL @""
+/// APP的名称.
+#define APP_NAME @"duckr"
+/// 中文文字字体名称.
+#define APP_CHINESE_FONT @"FZLanTingHeiS-R-GB"
+/// 英文文字字体名称
+#define APP_ENGLISH_FONT @"Futura"
+/// 状态栏高度.
+#define APP_NAVIGATION_STATUS_HEIGHT 20
+/// 导航栏高度.
+#define APP_NAVIGATION_HEIGHT 44
+/// APP主色(255,225,0).
+#define APP_COLOR 0xffe100
+/// APP导航栏标题字体颜色(178,130,71).
+#define APP_NAVIGATION_TITLE_COLOR 0xb28247
+/// 内容标题颜色(108,105,101).
+#define CONTENT_TITLE_COLOR 0x6c6965
+/// 内容提示颜色(196,191,187).
+#define CONTENT_HINT_COLOR 0xc4bfbb
+/// 线条的背景颜色(226,219,204).
+#define LINE_BG_COLOR 0xe2dbcc
+/// 日历未来日期的数字颜色(168,164,160).
+#define CALENDAR_FUTURE_CONTENT_COLOR 0xA8A4A0
+/// 日历过去日期的数字颜色(232,228,221).
+#define CALENDAR_PAST_CONTENT_COLOR 0xE8E4DD
+/// 日历数字颜色(196,191,187).
+#define BUTTON_BOARD_COLOR E8E4DD
+/// 日历头部字体颜色(124,118,113).
+#define CALENDAR_HEADER_COLOR 0x7c7671
+/// 按钮的标题颜色(178,130,71).
+#define BUTTON_TITLE_COLOR 0xb28247
+/// 头像缩略图宽度高度.
+#define THUMB_AVATAR_WIDTH 100
+/// 封面默认颜色值.
+#define COVER_DEFAULT_BG_COLOR 0xe0d9c9
+/// 所有页面的底色245，245，245
+#define PAGE_BG_COLOR 0xf5f5f5
+
+/// Ducker 黄 (255,225,0)
+#define DUCKER_YELLOW 0xffe100
+/// UINavigationBar TiniColor   
+#define NavigationBarTintColor 0x706B66
+///分割线色值
+#define DefaultSpalineColor  UIColorFromRGBA(0xe8e4dd, 1.0)
+
+///
+#define DefaultDuckrYellowColor UIColorFromRGBA(0xfedd00,1.0)
+/// 招待详情，服务的字体颜色
+#define SERVICE_ON_FONTCOLOR 0x56524D
+#define SERVICE_OFF_FONTCOLOR 0xE3DFDD
+/// Duckr 按钮绿 182     216     39
+#define DUCKR_GREEN 0xB6D827
+/// 兰亭黑字体.
+#define FONT_LANTINGBLACK @"FZLanTingHeiS-R-GB"
+/// 系统英文字体.
+#define FONT_FUTURA @"Futura"
+/// 平方中文
+#define FONT_PINGFANG @"PingFangSC-Regular"
+//#define FONT_PINGFANG @"FZLTHJW--GB1-0"
+
+/// 密码最短长度
+#define PASSWORD_MINIMAL_LENGTH 4
+/// 带有图片和文字的button，图片和文字间距
+#define BUTTON_SPACE_IMAGE_TITLE 5
+/// 用户常在地，用于分隔省和城市的符号
+#define LOCATION_CITY_SEPARATER @"-"
+/// 计划详情页，cover图片毛玻璃像素
+#define BLUE_PIXEL_FOR_PLANDETAIL_COVER 5
+/// 错误提示的持续时间
+#define TIME_FOR_ERROR_TIP 2
+/// 正确提示的持续时间
+#define TIME_FOR_RIGHT_TIP 1
+/// 用户所在地的信息不存在时，显示的符号
+#define LOCATION_DEFULT_SYMBOL @"-"
+
+#define PLAN_MAX_SCALE 20
+#define UPLOAD_CONTACT_MAX_DAYS 30
+#define CHAT_MAX_PAGE_LIMIT 10
+
+#define PULL_DOWN_WILLREFRESH_TEXT @"下拉可以刷新"
+#define PULL_DOWN_READYREFRESH_TEXT @"松开马上刷新"
+#define PULL_DOWN_REFRESHING_TEXT @"正在帮卖力刷新中"
+
+#define PULL_UP_WILLREFRESH_TEXT @"下拉可以刷新"
+#define PULL_UP_READYREFRESH_TEXT @"松开马上刷新"
+#define PULL_UP_REFRESHING_TEXT @"正在帮卖力刷新中"
+
+
+#pragma mark Funcs
+#define TwoDigitDouble(x) (round((x)*100)/100)
+#define ThreeDigitDouble(x) (round((x)*1000)/1000)
+
+#pragma mark ErrorMessage
+#define ErrorMsg_OrderPlanCanNotKickUser @"收费邀约不能踢人"
+#define ErrorMsg_OrderPlanCanNotQuit @"您必须去订单详情页面进行退款"
+#define ErrorMsg_OrderPlanCanNotEdit @"收费邀约不允许编辑"
+
+#pragma mark VIDEO_PATH @"VideoDocuments"
+

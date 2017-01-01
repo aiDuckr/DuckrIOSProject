@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LCOneDatePickView">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="261"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFQ-8E-hne">
+                    <rect key="frame" x="0.0" y="218" width="256" height="43"/>
+                    <color key="backgroundColor" red="0.98431372549019602" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="XWS-dp-dVB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="19"/>
+                    <state key="normal" title="购买">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submitBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="iOs-qP-ONl"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEX-0a-DuA">
+                    <rect key="frame" x="0.0" y="40" width="256" height="178"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XqQ-wI-ovj" userLabel="calendarTitle">
+                    <rect key="frame" x="0.0" y="0.0" width="256" height="40"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SendPlanCalendarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-vF-WGL">
+                            <rect key="frame" x="67" y="12" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="M8r-WL-Xgl"/>
+                                <constraint firstAttribute="width" constant="16" id="Mew-hx-1uL"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择开始日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9V-wq-z4n">
+                            <rect key="frame" x="93" y="11" width="96" height="19"/>
+                            <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="16"/>
+                            <color key="textColor" red="0.17254901959999999" green="0.1647058824" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iur-nt-aqR" userLabel="bottomLine">
+                            <rect key="frame" x="0.0" y="39" width="256" height="1"/>
+                            <color key="backgroundColor" red="0.90980392160000001" green="0.89411764709999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="I87-gq-oOS">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="constant">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fFg-vF-WGL" firstAttribute="centerY" secondItem="XqQ-wI-ovj" secondAttribute="centerY" id="9tB-KP-Ry2"/>
+                        <constraint firstItem="Iur-nt-aqR" firstAttribute="leading" secondItem="XqQ-wI-ovj" secondAttribute="leading" id="DyN-Xy-w99"/>
+                        <constraint firstAttribute="bottom" secondItem="Iur-nt-aqR" secondAttribute="bottom" id="SDe-Eg-X2d"/>
+                        <constraint firstItem="d9V-wq-z4n" firstAttribute="centerX" secondItem="XqQ-wI-ovj" secondAttribute="centerX" constant="13" id="rIg-wd-ZSK"/>
+                        <constraint firstAttribute="trailing" secondItem="Iur-nt-aqR" secondAttribute="trailing" id="u6X-zJ-aG7"/>
+                        <constraint firstItem="d9V-wq-z4n" firstAttribute="leading" secondItem="fFg-vF-WGL" secondAttribute="trailing" constant="10" id="woy-f1-T3r"/>
+                        <constraint firstItem="d9V-wq-z4n" firstAttribute="centerY" secondItem="fFg-vF-WGL" secondAttribute="centerY" id="wwH-CW-ydr"/>
+                        <constraint firstAttribute="height" constant="40" id="yIY-Nz-acm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eFQ-8E-hne" secondAttribute="trailing" id="G3a-aW-NkM"/>
+                <constraint firstItem="XqQ-wI-ovj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JMk-6E-iB2"/>
+                <constraint firstItem="XqQ-wI-ovj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O4N-IB-GVs"/>
+                <constraint firstAttribute="trailing" secondItem="IEX-0a-DuA" secondAttribute="trailing" id="SSL-CI-z8e"/>
+                <constraint firstItem="IEX-0a-DuA" firstAttribute="top" secondItem="XqQ-wI-ovj" secondAttribute="bottom" id="djO-ac-Idq"/>
+                <constraint firstItem="eFQ-8E-hne" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gkn-KV-1sh"/>
+                <constraint firstAttribute="bottom" secondItem="IEX-0a-DuA" secondAttribute="bottom" constant="43" id="hpR-mg-1C7"/>
+                <constraint firstItem="IEX-0a-DuA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tG2-Dh-gZd"/>
+                <constraint firstAttribute="bottom" secondItem="eFQ-8E-hne" secondAttribute="bottom" id="u68-RP-2Ey"/>
+                <constraint firstAttribute="trailing" secondItem="XqQ-wI-ovj" secondAttribute="trailing" id="uH5-Nb-LnH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="calBottomConstraint" destination="hpR-mg-1C7" id="7st-Vp-pAg"/>
+                <outlet property="calHolderView" destination="IEX-0a-DuA" id="hWp-Sp-5HV"/>
+                <outlet property="submitBtn" destination="eFQ-8E-hne" id="e9I-bz-Zfc"/>
+                <outlet property="titleLabel" destination="d9V-wq-z4n" id="snd-d5-xuA"/>
+            </connections>
+            <point key="canvasLocation" x="219" y="308.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SendPlanCalendarIcon" width="15" height="14"/>
+    </resources>
+</document>

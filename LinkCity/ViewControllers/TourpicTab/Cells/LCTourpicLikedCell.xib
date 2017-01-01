@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="LCTourpicLikedCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXa-3v-Po1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kn-dd-Ow4">
+                                <rect key="frame" x="12" y="0.0" width="351" height="1"/>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.89411764705882346" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="G33-MU-Tat">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.constant">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赞（0）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cu5-lu-T40">
+                                <rect key="frame" x="12" y="15" width="51" height="17"/>
+                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="14"/>
+                                <color key="textColor" red="0.17254901960784313" green="0.16470588235294117" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOQ-QX-Dso">
+                                <rect key="frame" x="12" y="41" width="318" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="QqE-1L-IkZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtT-JL-BeY">
+                                <rect key="frame" x="0.0" y="84" width="375" height="12"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="LsS-ls-pgM"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIm-ml-mIr">
+                                <rect key="frame" x="339" y="41" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="82D-W4-TPm"/>
+                                    <constraint firstAttribute="width" constant="24" id="Fm8-Dp-h1v"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="TourpicMoreLikedIcon"/>
+                                <connections>
+                                    <action selector="moreLikedAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Br3-Zb-ti2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2kn-dd-Ow4" secondAttribute="trailing" constant="12" id="8WK-mk-tH5"/>
+                            <constraint firstAttribute="trailing" secondItem="sOQ-QX-Dso" secondAttribute="trailing" constant="45" id="FXV-0y-LqU"/>
+                            <constraint firstItem="YIm-ml-mIr" firstAttribute="top" secondItem="hXa-3v-Po1" secondAttribute="top" constant="41" id="IX2-HT-qgN"/>
+                            <constraint firstItem="2kn-dd-Ow4" firstAttribute="leading" secondItem="hXa-3v-Po1" secondAttribute="leading" constant="12" id="WDh-KG-o6a"/>
+                            <constraint firstItem="XtT-JL-BeY" firstAttribute="top" secondItem="sOQ-QX-Dso" secondAttribute="bottom" constant="19" id="WK5-d3-d18"/>
+                            <constraint firstAttribute="bottom" secondItem="XtT-JL-BeY" secondAttribute="bottom" id="WM8-ts-guI"/>
+                            <constraint firstItem="sOQ-QX-Dso" firstAttribute="top" secondItem="hXa-3v-Po1" secondAttribute="top" constant="41" id="egX-NO-962"/>
+                            <constraint firstItem="Cu5-lu-T40" firstAttribute="leading" secondItem="hXa-3v-Po1" secondAttribute="leading" constant="12" id="gal-qP-jFM"/>
+                            <constraint firstItem="XtT-JL-BeY" firstAttribute="leading" secondItem="hXa-3v-Po1" secondAttribute="leading" id="gmF-OU-FOi"/>
+                            <constraint firstItem="Cu5-lu-T40" firstAttribute="top" secondItem="hXa-3v-Po1" secondAttribute="top" constant="15" id="iT7-dF-tPv"/>
+                            <constraint firstItem="2kn-dd-Ow4" firstAttribute="top" secondItem="hXa-3v-Po1" secondAttribute="top" id="kjs-Vz-pZV"/>
+                            <constraint firstItem="sOQ-QX-Dso" firstAttribute="leading" secondItem="hXa-3v-Po1" secondAttribute="leading" constant="12" id="qnI-ae-ZHT"/>
+                            <constraint firstAttribute="trailing" secondItem="YIm-ml-mIr" secondAttribute="trailing" constant="12" id="sj2-uZ-fnO"/>
+                            <constraint firstAttribute="bottom" secondItem="sOQ-QX-Dso" secondAttribute="bottom" constant="19" id="wyH-0J-SJZ"/>
+                            <constraint firstAttribute="trailing" secondItem="XtT-JL-BeY" secondAttribute="trailing" id="zrH-eu-odM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wyH-0J-SJZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hXa-3v-Po1" secondAttribute="bottom" id="FD7-TQ-pAr"/>
+                    <constraint firstItem="hXa-3v-Po1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Xvn-sv-hhM"/>
+                    <constraint firstItem="hXa-3v-Po1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lAf-5O-Kd9"/>
+                    <constraint firstAttribute="trailing" secondItem="hXa-3v-Po1" secondAttribute="trailing" id="wyV-lz-7Zb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="likedLabel" destination="Cu5-lu-T40" id="Vyv-dh-dkW"/>
+                <outlet property="likedView" destination="sOQ-QX-Dso" id="5jD-Kd-C85"/>
+                <outlet property="moreButton" destination="YIm-ml-mIr" id="ukJ-7c-cgW"/>
+            </connections>
+            <point key="canvasLocation" x="330.5" y="404.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TourpicMoreLikedIcon" width="24" height="24"/>
+    </resources>
+</document>

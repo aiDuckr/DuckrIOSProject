@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LCRoutePlaceAddCell" id="VK3-t7-LcP" userLabel="AddCell" customClass="LCRoutePlaceAddCell">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="131" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEi-TI-6Xp">
+                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                        <animations/>
+                        <state key="normal" image="AddPlaceBtn">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="oEi-TI-6Xp" firstAttribute="leading" secondItem="VK3-t7-LcP" secondAttribute="leading" id="koy-xX-z69"/>
+                <constraint firstAttribute="trailing" secondItem="oEi-TI-6Xp" secondAttribute="trailing" id="nf8-XZ-RPR"/>
+                <constraint firstAttribute="bottom" secondItem="oEi-TI-6Xp" secondAttribute="bottom" id="pLi-9i-hpq"/>
+                <constraint firstItem="oEi-TI-6Xp" firstAttribute="top" secondItem="VK3-t7-LcP" secondAttribute="top" id="qg0-9P-7To"/>
+            </constraints>
+            <size key="customSize" width="352" height="131"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="oEi-TI-6Xp"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="koy-xX-z69"/>
+                    <exclude reference="nf8-XZ-RPR"/>
+                    <exclude reference="pLi-9i-hpq"/>
+                    <exclude reference="qg0-9P-7To"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="oEi-TI-6Xp"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="koy-xX-z69"/>
+                    <include reference="nf8-XZ-RPR"/>
+                    <include reference="pLi-9i-hpq"/>
+                    <include reference="qg0-9P-7To"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="605" y="406.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="AddPlaceBtn" width="90" height="32"/>
+    </resources>
+</document>

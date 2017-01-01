@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LCPlanMemberUserCell" id="gTV-IL-0wX" customClass="LCPlanMemberUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="157"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Syk-cf-IYc">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="586-f8-7ur"/>
+                            <constraint firstAttribute="width" constant="58" id="9Vj-QX-T5t"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="29"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="586-f8-7ur"/>
+                                <include reference="9Vj-QX-T5t"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KickOffUserTag" translatesAutoresizingMaskIntoConstraints="NO" id="1o1-X1-LVc">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="pnu-JG-I2p"/>
+                            <constraint firstAttribute="width" constant="24" id="qcS-VJ-1HG"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="pnu-JG-I2p"/>
+                                <include reference="qcS-VJ-1HG"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="踢人" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4s-u4-a0H">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                        <color key="textColor" red="0.6588235294117647" green="0.64313725490196072" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Syk-cf-IYc" secondAttribute="centerX" id="EmT-YD-AlH"/>
+                <constraint firstItem="Syk-cf-IYc" firstAttribute="trailing" secondItem="1o1-X1-LVc" secondAttribute="trailing" id="M44-oW-Lcj"/>
+                <constraint firstItem="1o1-X1-LVc" firstAttribute="top" secondItem="Syk-cf-IYc" secondAttribute="top" id="SDb-ZM-x9m"/>
+                <constraint firstItem="Syk-cf-IYc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="UwC-ed-EcJ"/>
+                <constraint firstAttribute="trailing" secondItem="I4s-u4-a0H" secondAttribute="trailing" id="aLb-sz-kdT"/>
+                <constraint firstItem="I4s-u4-a0H" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jWM-Ou-swW"/>
+                <constraint firstItem="I4s-u4-a0H" firstAttribute="top" secondItem="Syk-cf-IYc" secondAttribute="bottom" constant="6" id="uDM-qA-ePm"/>
+            </constraints>
+            <size key="customSize" width="965" height="733"/>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Syk-cf-IYc"/>
+                    <include reference="1o1-X1-LVc"/>
+                    <include reference="I4s-u4-a0H"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="aLb-sz-kdT"/>
+                    <include reference="jWM-Ou-swW"/>
+                    <include reference="uDM-qA-ePm"/>
+                    <include reference="SDb-ZM-x9m"/>
+                    <include reference="EmT-YD-AlH"/>
+                    <include reference="M44-oW-Lcj"/>
+                    <include reference="UwC-ed-EcJ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="avatarImageView" destination="Syk-cf-IYc" id="MIR-Eq-7cl"/>
+                <outlet property="kickUserIcon" destination="1o1-X1-LVc" id="YI0-7P-scy"/>
+                <outlet property="nickLabel" destination="I4s-u4-a0H" id="D9n-Rd-wJb"/>
+            </connections>
+            <point key="canvasLocation" x="186.5" y="329.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="KickOffUserTag" width="24" height="24"/>
+    </resources>
+</document>

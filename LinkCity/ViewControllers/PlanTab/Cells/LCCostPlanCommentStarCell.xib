@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LCCostPlanCommentStarCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ii-KH-GTM" userLabel="topView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="12"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="vAt-Yn-d5z"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ihi-66-mZZ">
+                        <rect key="frame" x="0.0" y="12" width="320" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nt-8o-KHs">
+                                <rect key="frame" x="100" y="14" width="22" height="17"/>
+                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="14"/>
+                                <color key="textColor" red="0.98431372549019602" green="0.61568627450980395" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQZ-aI-9q3">
+                                <rect key="frame" x="124" y="19" width="10" height="12"/>
+                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="10"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.61568627450000002" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlanDetailCommentScoreMoreIcon" translatesAutoresizingMaskIntoConstraints="NO" id="aKl-xF-gWg">
+                                <rect key="frame" x="301" y="16" width="7" height="13"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2人评价" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYe-J8-HFm">
+                                <rect key="frame" x="246" y="15" width="47" height="15"/>
+                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                                <color key="textColor" red="0.6705882352941176" green="0.65490196078431373" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mQZ-aI-9q3" firstAttribute="leading" secondItem="6Nt-8o-KHs" secondAttribute="trailing" constant="3" id="5Jy-6G-CcB"/>
+                            <constraint firstItem="aKl-xF-gWg" firstAttribute="leading" secondItem="EYe-J8-HFm" secondAttribute="trailing" constant="8" id="BtI-Fb-TSe"/>
+                            <constraint firstAttribute="trailing" secondItem="aKl-xF-gWg" secondAttribute="trailing" constant="12" id="KGA-D3-YkC"/>
+                            <constraint firstItem="mQZ-aI-9q3" firstAttribute="bottom" secondItem="6Nt-8o-KHs" secondAttribute="bottom" id="MAk-gE-EcO"/>
+                            <constraint firstItem="EYe-J8-HFm" firstAttribute="centerY" secondItem="Ihi-66-mZZ" secondAttribute="centerY" id="a7R-ly-6KK"/>
+                            <constraint firstItem="6Nt-8o-KHs" firstAttribute="centerY" secondItem="Ihi-66-mZZ" secondAttribute="centerY" id="gRP-eh-9sh"/>
+                            <constraint firstAttribute="height" constant="45" id="pOz-Pa-DYs"/>
+                            <constraint firstItem="6Nt-8o-KHs" firstAttribute="leading" secondItem="Ihi-66-mZZ" secondAttribute="leading" constant="100" id="ql0-B2-aBZ"/>
+                            <constraint firstItem="aKl-xF-gWg" firstAttribute="centerY" secondItem="Ihi-66-mZZ" secondAttribute="centerY" id="u6V-2J-59W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6ii-KH-GTM" secondAttribute="trailing" id="2K6-9g-JaX"/>
+                    <constraint firstAttribute="bottom" secondItem="Ihi-66-mZZ" secondAttribute="bottom" id="BhO-T6-lC0"/>
+                    <constraint firstItem="6ii-KH-GTM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UtT-ku-KwE"/>
+                    <constraint firstItem="6ii-KH-GTM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hTz-Uq-RDZ"/>
+                    <constraint firstItem="Ihi-66-mZZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="rBy-O0-vhz"/>
+                    <constraint firstItem="Ihi-66-mZZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rWV-E0-P32"/>
+                    <constraint firstAttribute="trailing" secondItem="Ihi-66-mZZ" secondAttribute="trailing" id="yez-Rc-qs5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentCountLabel" destination="EYe-J8-HFm" id="EQK-SA-pee"/>
+                <outlet property="midView" destination="Ihi-66-mZZ" id="sgz-YG-Bt3"/>
+                <outlet property="scoreLabel" destination="6Nt-8o-KHs" id="hgr-bh-I4e"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="235.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PlanDetailCommentScoreMoreIcon" width="7" height="13"/>
+    </resources>
+</document>

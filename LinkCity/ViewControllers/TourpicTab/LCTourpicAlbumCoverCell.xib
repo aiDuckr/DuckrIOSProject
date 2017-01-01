@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LanTing.ttf">
+            <string>FZLTHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" customClass="LCTourpicAlbumCoverCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="259"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="258.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjy-Q4-NSE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TourpicMyselfDefaultCover" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-dU-wGM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cH4-dU-wGM" secondAttribute="height" multiplier="375:226" id="DDt-6x-Qmb"/>
+                                    <constraint firstAttribute="width" secondItem="cH4-dU-wGM" secondAttribute="height" multiplier="175:106" id="ftY-uw-aIa"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ftY-uw-aIa"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIi-H7-lmf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kk1-MX-5Id">
+                                <rect key="frame" x="13" y="198" width="56" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCs-BL-u1O">
+                                        <rect key="frame" x="3" y="3" width="50" height="50"/>
+                                        <state key="normal" image="DefaultAvatar">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Klp-Xb-wTu"/>
+                                    <constraint firstAttribute="bottom" secondItem="oCs-BL-u1O" secondAttribute="bottom" constant="3" id="Yrs-U9-Y3O"/>
+                                    <constraint firstItem="oCs-BL-u1O" firstAttribute="leading" secondItem="kk1-MX-5Id" secondAttribute="leading" constant="3" id="aRf-L6-sab"/>
+                                    <constraint firstAttribute="width" constant="56" id="dqO-Vg-HBQ"/>
+                                    <constraint firstItem="oCs-BL-u1O" firstAttribute="top" secondItem="kk1-MX-5Id" secondAttribute="top" constant="3" id="eG8-Ta-rGj"/>
+                                    <constraint firstAttribute="trailing" secondItem="oCs-BL-u1O" secondAttribute="trailing" constant="3" id="hK8-rv-CaM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                        <integer key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张宗硕" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHP-OX-QBS">
+                                <rect key="frame" x="73" y="232" width="45" height="18"/>
+                                <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="15"/>
+                                <color key="textColor" red="0.4392156862745098" green="0.41960784313725491" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jHP-OX-QBS" firstAttribute="leading" secondItem="kk1-MX-5Id" secondAttribute="trailing" constant="4" id="2MV-og-SZe"/>
+                            <constraint firstItem="lIi-H7-lmf" firstAttribute="top" secondItem="Qjy-Q4-NSE" secondAttribute="top" id="3B7-sa-iCi"/>
+                            <constraint firstItem="cH4-dU-wGM" firstAttribute="top" secondItem="Qjy-Q4-NSE" secondAttribute="top" id="Hkd-N4-0Op"/>
+                            <constraint firstItem="kk1-MX-5Id" firstAttribute="top" secondItem="cH4-dU-wGM" secondAttribute="bottom" constant="-28" id="LiN-mY-och"/>
+                            <constraint firstAttribute="trailing" secondItem="cH4-dU-wGM" secondAttribute="trailing" id="WfY-Cn-IXZ"/>
+                            <constraint firstItem="lIi-H7-lmf" firstAttribute="width" secondItem="cH4-dU-wGM" secondAttribute="width" id="ZLm-Vq-8sl"/>
+                            <constraint firstItem="kk1-MX-5Id" firstAttribute="leading" secondItem="Qjy-Q4-NSE" secondAttribute="leading" constant="13" id="ndl-Xs-AlC"/>
+                            <constraint firstItem="jHP-OX-QBS" firstAttribute="top" secondItem="cH4-dU-wGM" secondAttribute="bottom" constant="6" id="okV-Vo-BRK"/>
+                            <constraint firstItem="lIi-H7-lmf" firstAttribute="height" secondItem="cH4-dU-wGM" secondAttribute="height" id="uvK-41-k1a"/>
+                            <constraint firstItem="cH4-dU-wGM" firstAttribute="leading" secondItem="Qjy-Q4-NSE" secondAttribute="leading" id="vy0-3U-3AF"/>
+                            <constraint firstItem="lIi-H7-lmf" firstAttribute="leading" secondItem="Qjy-Q4-NSE" secondAttribute="leading" id="yCQ-hH-Jk0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qjy-Q4-NSE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="68B-fz-Lml"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Qjy-Q4-NSE" secondAttribute="bottom" id="Ce2-z2-3Pf"/>
+                    <constraint firstAttribute="trailing" secondItem="Qjy-Q4-NSE" secondAttribute="trailing" id="RV8-RQ-YVx"/>
+                    <constraint firstItem="Qjy-Q4-NSE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="i2M-Yl-DgU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarButton" destination="oCs-BL-u1O" id="RNE-1e-iaf"/>
+                <outlet property="coverButton" destination="lIi-H7-lmf" id="mDK-dG-0qx"/>
+                <outlet property="coverImageView" destination="cH4-dU-wGM" id="Tau-Dx-Cvw"/>
+                <outlet property="nameLabel" destination="jHP-OX-QBS" id="QGe-QP-v5Y"/>
+            </connections>
+            <point key="canvasLocation" x="328.5" y="419.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DefaultAvatar" width="70" height="70"/>
+        <image name="TourpicMyselfDefaultCover" width="375" height="225"/>
+    </resources>
+</document>
