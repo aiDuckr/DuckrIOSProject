@@ -1,2 +1,2 @@
 # DuckrIOSProject
-warning:this is private. DO NOT download it!
+Warning: this is private. DO NOT download it!
